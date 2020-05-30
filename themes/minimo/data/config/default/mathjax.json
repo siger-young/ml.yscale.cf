@@ -1,0 +1,23 @@
+{
+  "library": {
+    "path1": "//unpkg.com/mathjax@2.7.5/MathJax.js",
+    "path": "//cdn.bootcdn.net/ajax/libs/mathjax/3.0.5/es5/tex-mml-chtml.js",
+    "config": "TeX-MML-AM_CHTML"
+  },
+  "config": {
+    "tex": {
+      "inlineMath": [ ["$", "$"], ["\\(", "\\)"] ],
+      "displayMath": [["$$","$$"], ["\\[","\\]"]],
+      "processEscapes": true,
+      "tags": "ams"
+    },
+    "options": {
+      "renderActions": {
+        "addMenu": []
+      },
+      "ignoreHtmlClass": "tex2jax_ignore",
+      "processHtmlClass": "tex2jax_process",
+      "skipHtmlTags": ["script", "noscript", "style", "textarea", "pre", "code"]
+    }
+  }
+}
