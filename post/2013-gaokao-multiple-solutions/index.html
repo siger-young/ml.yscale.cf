@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>2013 年上海高考数学卷一道题的多种解法 - yscale - anything about ML</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="yscale" /><meta name="description" content="题源 2013 年上海高考数学卷 第 13 题 题面 在 \(xOy\) 平面上，将两个半圆弧 \((x-1)^2&#43;y^2=1~(x\geq 1)\) 和 \((x-3)^2&#43;y^2=1~(x\geq 3)\) 、两条直线 \(y=1\) 和 \(y=-1\) 围成的封闭图形记为 \(D\) ，如图中阴影部分. 记 \(D\) 绕 \(y\) 轴旋转一周而" /><meta name="keywords" content="yscale" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.72.0-DEV with theme even" />
+
+
+<link rel="canonical" href="https://ml.yscale.cf/post/2013-gaokao-multiple-solutions/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.69f09e7d7e0cd7f81eacea88ee9f3e00c98777bfa20062e4ceb789f830acf508.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="2013 年上海高考数学卷一道题的多种解法" />
+<meta property="og:description" content="题源 2013 年上海高考数学卷 第 13 题 题面 在 \(xOy\) 平面上，将两个半圆弧 \((x-1)^2&#43;y^2=1~(x\geq 1)\) 和 \((x-3)^2&#43;y^2=1~(x\geq 3)\) 、两条直线 \(y=1\) 和 \(y=-1\) 围成的封闭图形记为 \(D\) ，如图中阴影部分. 记 \(D\) 绕 \(y\) 轴旋转一周而" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ml.yscale.cf/post/2013-gaokao-multiple-solutions/" />
+<meta property="article:published_time" content="2019-08-18T21:18:00+00:00" />
+<meta property="article:modified_time" content="2019-08-18T21:18:00+00:00" />
+<meta itemprop="name" content="2013 年上海高考数学卷一道题的多种解法">
+<meta itemprop="description" content="题源 2013 年上海高考数学卷 第 13 题 题面 在 \(xOy\) 平面上，将两个半圆弧 \((x-1)^2&#43;y^2=1~(x\geq 1)\) 和 \((x-3)^2&#43;y^2=1~(x\geq 3)\) 、两条直线 \(y=1\) 和 \(y=-1\) 围成的封闭图形记为 \(D\) ，如图中阴影部分. 记 \(D\) 绕 \(y\) 轴旋转一周而">
+<meta itemprop="datePublished" content="2019-08-18T21:18:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-08-18T21:18:00&#43;00:00" />
+<meta itemprop="wordCount" content="632">
+
+
+
+<meta itemprop="keywords" content="高考," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="2013 年上海高考数学卷一道题的多种解法"/>
+<meta name="twitter:description" content="题源 2013 年上海高考数学卷 第 13 题 题面 在 \(xOy\) 平面上，将两个半圆弧 \((x-1)^2&#43;y^2=1~(x\geq 1)\) 和 \((x-3)^2&#43;y^2=1~(x\geq 3)\) 、两条直线 \(y=1\) 和 \(y=-1\) 围成的封闭图形记为 \(D\) ，如图中阴影部分. 记 \(D\) 绕 \(y\) 轴旋转一周而"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">yscale</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">yscale</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">2013 年上海高考数学卷一道题的多种解法</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-08-18 </span>
+        <div class="post-category">
+            <a href="/categories/mathematics/"> mathematics </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents"></nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p><strong>题源</strong> 2013 年上海高考数学卷 第 13 题</p>
+<p><strong>题面</strong> 在 <span class="math inline">\(xOy\)</span> 平面上，将两个半圆弧 <span class="math inline">\((x-1)^2+y^2=1~(x\geq 1)\)</span> 和 <span class="math inline">\((x-3)^2+y^2=1~(x\geq 3)\)</span> 、两条直线 <span class="math inline">\(y=1\)</span> 和 <span class="math inline">\(y=-1\)</span> 围成的封闭图形记为 <span class="math inline">\(D\)</span> ，如图中阴影部分. 记 <span class="math inline">\(D\)</span> 绕 <span class="math inline">\(y\)</span> 轴旋转一周而成的几何体为 <span class="math inline">\(\Omega\)</span> ，过 <span class="math inline">\((0,y)~(|y|\leq 1)\)</span> 作 <span class="math inline">\(\Omega\)</span> 的水平截面，所得截面面积为 <span class="math inline">\(4\pi\sqrt{1-y^2}+8\pi\)</span> ，试用祖暅原理、一个平放的圆柱和一个长方体，得出 <span class="math inline">\(\Omega\)</span> 的体积值为 <span class="math inline">\(\boxed{?}\)</span> .</p>
+<p><img src="/old/uploads/2019/08/3196861200.png" alt="gaokao-zugeng-figure.png"></p>
+<p><strong>法 1 (标准解法)</strong> 根据提示利用祖暅原理，构造几何体由一个半径为 <span class="math inline">\(1\)</span> ，高为 <span class="math inline">\(2\pi\)</span> 的平放圆柱和一个高为 <span class="math inline">\(2\)</span> ，底面面积为 <span class="math inline">\(8\pi\)</span> 的长方体组成，其体积为 <span class="math inline">\(V=2\pi^2+16\pi\)</span> .</p>
+<p>我并不知道题面中的水平截面面积为何要额外给出，在我看来这是冗余的条件，下文给出几种非祖暅原理的解法，可能有点小题大作，不过主要是为了熟悉一下微积分相关知识点……</p>
+<p><strong>法 2 (旋转体)</strong> 注意到水平截面的表达式为 <span class="math inline">\(4\pi\sqrt{1-y^2}+8\pi\)</span> ，可得到</p>
+<p><span class="math display">\[\begin{aligned}V&=\int_{-1}^{1}4\pi\sqrt{1-y^2}+8\pi\mathrm{d}y\\&=4\pi\int_{-1}^{1}\sqrt{1-y^2}+2\mathrm{d}y\\(x=\sin(\theta))&=4\pi\int_{-\frac\pi2}^{\frac\pi2}(\cos(\theta)+2)\cos(\theta)\mathrm{d}\theta\\&=4\pi\int_{-\frac\pi2}^{\frac\pi2}\cos^2(\theta)+2\cos(\theta)\mathrm{d}\theta\\&=4\pi\int_{-\frac\pi2}^{\frac\pi2}\frac{\cos(2\theta)+1}{2}+2\cos(\theta)\mathrm{d}\theta\\&=4\pi\left[\frac{\sin(2\theta)}{4}+\frac\theta2+2\sin(\theta)\right]^{\frac\pi2}_{-\frac\pi2}\\&=4\pi\left(\frac\pi2+4\right)\\&=2\pi^2+16\pi.\end{aligned}
+\]</span></p>
+<p>虽然这里直接用到了题面所给截面面积表达式，但是该方法与利用旋转体公式求</p>
+<p><span class="math display">\[V=\pi\int_{-1}^{1}(\sqrt{1-y^2}+3)^2-(\sqrt{1-y^2}+1)^2\mathrm{d}y
+\]</span></p>
+<p>是等价的.</p>
+<p><strong>法 3 (帕普斯法则)</strong> 应用帕普斯法则求体积，需要先求该平面图形的质心，可利用分割法与二重积分求得，首先分割区域如下图</p>
+<p><img src="/old/uploads/2019/08/2556948323.png" alt="gaokao-zugeng-region.png"></p>
+<p>其中 <span class="math inline">\(R_0\)</span> 是中央的 <span class="math inline">\(2\times2\)</span> 矩形区域， <span class="math inline">\(R_1,R_2\)</span> 分别为两个半圆区域。（由于这些区域的质心显然在 <span class="math inline">\(x\)</span> 轴上，下文直接使用 <span class="math inline">\(x\)</span> 坐标表示其质心。）
+区域 <span class="math inline">\(R_0\)</span> 的质心显然为 <span class="math inline">\(x_0=2\)</span> ；为求得 <span class="math inline">\(R_1,R_2\)</span> 两个区域的质心，逆用帕普斯法则可以知道其质心分别为</p>
+<p><span class="math display">\[x_1=1+\frac{4}{3\pi},x_2=3+\frac{4}{3\pi}.
+\]</span></p>
+<p>接着利用二重积分求区域 <span class="math inline">\(D\)</span> 的质心 <span class="math inline">\(G\)</span> ，又注意到 <span class="math inline">\(D=R_0-R_1+R_2\)</span> ，根据质心公式有</p>
+<p><span class="math display">\[\begin{aligned}G_x&=\frac{1}{S_D}\iint_{D}x\mathrm{d}A\\&=\frac{1}{S_D}\left(\iint_{R_0}x\mathrm{d}A-\iint_{R_1}x\mathrm{d}A+\iint_{R_2}x\mathrm{d}A\right),\end{aligned}
+\]</span></p>
+<p>其中 <span class="math inline">\(S_D=4\)</span> 表示区域 <span class="math inline">\(D\)</span> 的面积.
+对于区域 <span class="math inline">\(R_0,R_1, R_2\)</span> 分别使用质心公式可以知道</p>
+<p><span class="math display">\[\begin{aligned}
+x_0&=\frac{1}{S_{R_0}}\iint_{R_0}x\mathrm{d}A\\
+x_1&=\frac{1}{S_{R_1}}\iint_{R_1}x\mathrm{d}A\\
+x_2&=\frac{1}{S_{R_2}}\iint_{R_2}x\mathrm{d}A,
+\end{aligned}
+\]</span></p>
+<p>其中 <span class="math inline">\(S_{R_0},S_{R_1},S_{R_2}\)</span> 分别表示区域 <span class="math inline">\(R_0,R_1,R_2\)</span> 的面积，经过变形后得到一组二重积分的表达式</p>
+<p><span class="math display">\[\begin{aligned}\iint_{R_0}x\mathrm{d}A&=S_{R_0}x_0\\\iint_{R_1}x\mathrm{d}A&=S_{R_1}x_1\\\iint_{R_2}x\mathrm{d}A&=S_{R_2}x_2,\end{aligned}
+\]</span></p>
+<p>将其代入之前的式子可得到</p>
+<p><span class="math display">\[\begin{aligned}
+G_x&=x_0-\frac{S_{R_1}}{S_D}x_1+\frac{S_{R_2}}{S_D}x_2\\
+&=2-\frac{\frac\pi2}{4}\left(1+\frac{4}{3\pi}\right)+\frac{\frac\pi2}{4}\left(3+\frac{4}{3\pi}\right)\\
+&=\frac\pi4+2,
+\end{aligned}
+\]</span></p>
+<p>则几何体的体积可表示为</p>
+<p><span class="math display">\[\begin{aligned}V&=2\pi\cdot G_x\cdot S_D\\&=2\pi\cdot(\frac\pi4+2)\cdot4\\&=2\pi^2+16\pi.\end{aligned}
+\]</span></p>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">yscale</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2019-08-18
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/%E9%AB%98%E8%80%83/">高考</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/mit-ocw-18-02-multivariable-calculus-18/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">[MIT OCW] 18.02 Multivariable Calculus - 18 笔记</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/mit-ocw-18-02-multivariable-calculus-16-17/">
+            <span class="next-text nav-default">[MIT OCW] 18.02 Multivariable Calculus - 16, 17 笔记</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:yscysc01@hotmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/siger-young" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.zhihu.com/people/yscale" class="iconfont icon-zhihu" title="zhihu"></a>
+  <a href="https://ml.yscale.cf/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">yscale</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+
+
+  <script type="text/javascript">
+    window.MathJax = {
+		  tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']],
+          processEscapes: true,
+          processEnvironments: true,
+        autoload: {
+            color: [],
+            colorV2: ['color']
+          },
+          packages: {'[+]': ['noerrors']}
+      },
+      loader: {
+		  	load: ['input/asciimath', '[tex]/noerrors']
+      }
+    };
+  </script>
+  <script async src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.0.5/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

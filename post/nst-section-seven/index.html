@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>[Naive Set Theory] Section 7 Relations - yscale - anything about ML</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="yscale" /><meta name="description" content="Naive Set Theory Section 7 Relations （二元）关系" /><meta name="keywords" content="yscale" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.72.0-DEV with theme even" />
+
+
+<link rel="canonical" href="https://ml.yscale.cf/post/nst-section-seven/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.69f09e7d7e0cd7f81eacea88ee9f3e00c98777bfa20062e4ceb789f830acf508.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="[Naive Set Theory] Section 7 Relations" />
+<meta property="og:description" content="Naive Set Theory Section 7 Relations （二元）关系" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ml.yscale.cf/post/nst-section-seven/" />
+<meta property="article:published_time" content="2018-08-11T07:08:00+00:00" />
+<meta property="article:modified_time" content="2018-08-11T07:08:00+00:00" />
+<meta itemprop="name" content="[Naive Set Theory] Section 7 Relations">
+<meta itemprop="description" content="Naive Set Theory Section 7 Relations （二元）关系">
+<meta itemprop="datePublished" content="2018-08-11T07:08:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-08-11T07:08:00&#43;00:00" />
+<meta itemprop="wordCount" content="1014">
+
+
+
+<meta itemprop="keywords" content="Naive Set Theory," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[Naive Set Theory] Section 7 Relations"/>
+<meta name="twitter:description" content="Naive Set Theory Section 7 Relations （二元）关系"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">yscale</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">yscale</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">[Naive Set Theory] Section 7 Relations</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-08-11 </span>
+        <div class="post-category">
+            <a href="/categories/mathematics/"> mathematics </a>
+            <a href="/categories/set-theory/"> set-theory </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#naive-set-theory-section-7-relations-二元关系"><em>Naive Set Theory</em> Section 7 Relations （二元）关系</a>
+      <ul>
+        <li><a href="#前置要点-highlights">前置要点 Highlights</a></li>
+        <li><a href="#阐明-exposition">阐明 Exposition</a></li>
+        <li><a href="#习题-exercise">习题 Exercise</a></li>
+        <li><a href="#参考-reference">参考 Reference</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="naive-set-theory-section-7-relations-二元关系"><em>Naive Set Theory</em> Section 7 Relations （二元）关系</h1>
+<h2 id="前置要点-highlights">前置要点 Highlights</h2>
+<blockquote>
+<p><strong>P. 26 Para. 3</strong>: We may not know what a relation is, but we do know what a set is, and the preceding considerations establish a close connection between relations and sets.</p>
+</blockquote>
+<ul>
+<li>使用<strong>集合</strong>语言，去描述<strong>关系</strong>.</li>
+</ul>
+<hr>
+<h2 id="阐明-exposition">阐明 Exposition</h2>
+<ul>
+<li>
+<p><strong>二元关系</strong></p>
+<ul>
+<li>由二元有序对组成的集合即是一个<strong>二元关系</strong>，也就是说 <span class="math inline">\(z\in R\Leftrightarrow \exists x,y:z=(x,y)\)</span> ，那么 <span class="math inline">\(R\)</span> 就是一个<strong>二元关系</strong>.</li>
+<li>如果有序对 <span class="math inline">\((x,y)\in R\)</span> ，那么我们有时为了方便会写成 <span class="math inline">\(x\;R\;y\)</span> .</li>
+</ul>
+</li>
+<li>
+<p><strong>二元关系</strong>例举</p>
+<ul>
+<li><span class="math inline">\(R = \varnothing\)</span> 是一个<strong>二元关系</strong>. (反面情况思考)</li>
+<li><span class="math inline">\(R = A\times B\)</span> 是一个<strong>二元关系</strong>.</li>
+<li><span class="math inline">\(R=\{(x,x): x\in A\}\)</span> 是一个在 <span class="math inline">\(A\)</span> 上的<strong>相等关系</strong>， <span class="math inline">\(x\;R\;y\)</span> 意味着 <span class="math inline">\(x = y\)</span> .</li>
+</ul>
+</li>
+<li>
+<p><strong>投影</strong></p>
+<ul>
+<li>将二元关系 <span class="math inline">\(R\)</span> 第一维的<strong>投影</strong>称为<strong>定义域</strong>(domain)，记作 <span class="math inline">\(\mathrm{dom} R\)</span> ，被定义为 <span class="math inline">\(\mathrm{dom} R = \{x:\exists y (x\;R\;y)\}\)</span> .</li>
+<li>将二元关系 <span class="math inline">\(R\)</span> 第二维的<strong>投影</strong>称为<strong>值域</strong>(range)，记作 <span class="math inline">\(\mathrm{ran}R\)</span> ，被定义为 <span class="math inline">\(\mathrm{ran} R = \{y:\exists x (x\;R\;y)\}\)</span> .</li>
+</ul>
+</li>
+<li>
+<p><strong>投影</strong>的例举</p>
+<ul>
+<li>考虑一个 <span class="math inline">\(X\)</span> 和 <span class="math inline">\(\mathcal{P}(X)\)</span> 的属于关系 <span class="math inline">\(R=\{(a,b): a\in X, b\in \mathcal{P}(X)\}\)</span> ，此处 <span class="math inline">\(\mathrm{dom} A= X\)</span> ，而 <span class="math inline">\(\mathrm{ran} A=\mathcal{P}(X) - \{\varnothing\}\)</span> .</li>
+</ul>
+</li>
+<li>
+<p>一些用语以及性质</p>
+<ul>
+<li>如果 <span class="math inline">\(R\)</span> 满足 <span class="math inline">\(\mathrm{dom} A\subset X, \mathrm{ran} A\subset Y\)</span> ，那么称其为从 <span class="math inline">\(X\)</span> 到 <span class="math inline">\(Y\)</span> 的一个关系.</li>
+<li>如果 <span class="math inline">\(R\)</span> 是从 <span class="math inline">\(X\)</span> 到 <span class="math inline">\(X\)</span> 的一个关系，那么常称其为 <span class="math inline">\(X\)</span> 上的关系.</li>
+<li>如果 <span class="math inline">\(X\)</span> 上的关系 <span class="math inline">\(R\)</span> 满足 <span class="math inline">\(\forall x\in X, x\;R \;x\)</span> ，那么 <span class="math inline">\(R\)</span> 具有<strong>自反性</strong>(reflexive).</li>
+<li>如果从 <span class="math inline">\(X\)</span> 到 <span class="math inline">\(Y\)</span> 的关系 <span class="math inline">\(R\)</span> 满足 <span class="math inline">\(\forall x\in X,\forall y\in Y, x\;R\;y \Leftrightarrow y\;R\;x\)</span> ，那么 <span class="math inline">\(R\)</span> 具有<strong>对称性</strong>(symmetric).</li>
+<li>如果从 <span class="math inline">\(X\)</span> 到 <span class="math inline">\(Y\)</span> 的关系 <span class="math inline">\(R\)</span> 满足 <span class="math inline">\(\forall x,\forall y,\forall z, (x\;R\;y \land y\;R\;z) \Rightarrow x\;R\;z\)</span> ，那么 <span class="math inline">\(R\)</span> 具有<strong>传递性</strong>(transitive).</li>
+</ul>
+</li>
+</ul>
+<p><em><strong>思考</strong></em>: 联想到<strong>有向图</strong>，自反性就代表一个自环，对称性代表两个结点的构成的环，传递性代表如果两结点间有通路，那么它们之间必直接存在一条边.</p>
+<ul>
+<li>
+<p><strong>等价关系</strong></p>
+<ul>
+<li>如果关系 <span class="math inline">\(R\)</span> 满足自反性、对称性、传递性，则其为<strong>等价关系</strong>.</li>
+<li>对于 <span class="math inline">\(X\)</span> 上的关系，最小的等价关系是 <span class="math inline">\(X\)</span> 上的<strong>相等关系</strong>，最大的等价关系是笛卡儿积 <span class="math inline">\(X\times X\)</span> .</li>
+</ul>
+</li>
+<li>
+<p><strong>划分</strong>和<strong>等价类</strong></p>
+<ul>
+<li>如果 <span class="math inline">\(P\)</span> 是 <span class="math inline">\(X\)</span> 非空子集的集合，且 <span class="math inline">\(P\)</span> 中的元素不交， <span class="math inline">\(\bigcup P = X\)</span> ，那么 <span class="math inline">\(P\)</span> 是 <span class="math inline">\(X\)</span> 的一个<strong>划分</strong>.</li>
+<li>如果 <span class="math inline">\(R\)</span> 是 <span class="math inline">\(X\)</span> 上的一个等价关系，如果 <span class="math inline">\(x\in X\)</span> ，则 <span class="math inline">\(x\)</span> 的<strong>等价类</strong>是所有满足 <span class="math inline">\(y\in X, x\;R\;y\)</span> 的 <span class="math inline">\(y\)</span> 构成的集合.</li>
+<li>如果 <span class="math inline">\(R\)</span> 是 <span class="math inline">\(X\)</span> 上的相等关系，那么每一个<strong>等价类</strong>都会是一个单元素集.</li>
+<li>如果 <span class="math inline">\(R = X\times X\)</span> ，那么唯一的等价类就是 <span class="math inline">\(X\)</span> 本身.</li>
+</ul>
+</li>
+<li>
+<p><strong>等价类</strong>的记号</p>
+<ul>
+<li>对于 <span class="math inline">\(X\)</span> 上的等价关系 <span class="math inline">\(R\)</span> ， <span class="math inline">\(x\)</span> 的<strong>等价类</strong>被记作 <span class="math inline">\(x/R\)</span> .</li>
+<li>对于 <span class="math inline">\(X\)</span> 上的等价关系 <span class="math inline">\(R\)</span> ， <span class="math inline">\(X\)</span> 的所有<strong>等价类</strong>被记作 <span class="math inline">\(X/R\)</span> .</li>
+<li><span class="math inline">\(/\)</span> 实际上是取模(modulo).</li>
+</ul>
+</li>
+<li>
+<p><strong>诱导产生的等价关系</strong></p>
+<ul>
+<li>考虑原有的在 <span class="math inline">\(X\)</span> 上的等价关系 <span class="math inline">\(R\)</span> ，现有 <span class="math inline">\(X\)</span> 的一个划分 <span class="math inline">\(P\)</span> ，如果 <span class="math inline">\(x\;R\;y\)</span> 且 <span class="math inline">\(x,y\)</span> 属于划分 <span class="math inline">\(P\)</span> 中同一个集合，那么这样的新关系记作 <span class="math inline">\(X/P\)</span> ，由划分 <span class="math inline">\(P\)</span> <strong>诱导</strong>引起.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="习题-exercise">习题 Exercise</h2>
+<ul>
+<li>对于三个性质中的每个性质分别例举一个关系，使得其只满足三个性质中的其它两个.</li>
+</ul>
+<ol>
+<li>不满足自反性 <span class="math inline">\(R_1 = \{(a,b):a\in X, b\in X, a\neq b\}\)</span> .</li>
+<li>不满足对称性 <span class="math inline">\(R_2 = \{(a,b):a\in X, b\in X, a\leq b\}, |X|>1\)</span> .</li>
+<li>不满足传递性 具体列举即可，略. (不过找到有一个蛮有趣的生活中的例子<a href="https://math.stackexchange.com/a/268732"><sup>1</sup></a>)</li>
+</ol>
+<h2 id="参考-reference">参考 Reference</h2>
+<p><a href="https://math.stackexchange.com/a/268732">1</a> <a href="https://math.stackexchange.com/a/268732">https://math.stackexchange.com/a/268732</a></p>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">yscale</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2018-08-11
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/naive-set-theory/">Naive Set Theory</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/nst-section-eight/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">[Naive Set Theory] Section 8 Functions</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/nst-section-six/">
+            <span class="next-text nav-default">[Naive Set Theory] Section 6 Ordered Pairs</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:yscysc01@hotmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/siger-young" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.zhihu.com/people/yscale" class="iconfont icon-zhihu" title="zhihu"></a>
+  <a href="https://ml.yscale.cf/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">yscale</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+
+
+  <script type="text/javascript">
+    window.MathJax = {
+		  tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']],
+          processEscapes: true,
+          processEnvironments: true,
+        autoload: {
+            color: [],
+            colorV2: ['color']
+          },
+          packages: {'[+]': ['noerrors']}
+      },
+      loader: {
+		  	load: ['input/asciimath', '[tex]/noerrors']
+      }
+    };
+  </script>
+  <script async src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.0.5/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

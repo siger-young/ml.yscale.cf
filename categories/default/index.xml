@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>default on yscale - anything about ML</title>
+    <link>https://ml.yscale.cf/categories/default/</link>
+    <description>Recent content in default on yscale - anything about ML</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 12 Jul 2018 22:04:12 +0000</lastBuildDate>
+    
+	<atom:link href="https://ml.yscale.cf/categories/default/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello, LaTeX!</title>
+      <link>https://ml.yscale.cf/post/hello-latex/</link>
+      <pubDate>Thu, 12 Jul 2018 22:04:12 +0000</pubDate>
+      
+      <guid>https://ml.yscale.cf/post/hello-latex/</guid>
+      <description>\[\rm Hello, \LaTeX{}! \]</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>[MIT OCW] 18.02 Multivariable Calculus - 5 笔记 - yscale - anything about ML</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="yscale" /><meta name="description" content="MIT OCW 18.02 Multivariable Calculus" /><meta name="keywords" content="yscale" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.72.0-DEV with theme even" />
+
+
+<link rel="canonical" href="https://ml.yscale.cf/post/mit-ocw-18-02-multivariable-calculus-5/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.69f09e7d7e0cd7f81eacea88ee9f3e00c98777bfa20062e4ceb789f830acf508.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="[MIT OCW] 18.02 Multivariable Calculus - 5 笔记" />
+<meta property="og:description" content="MIT OCW 18.02 Multivariable Calculus" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ml.yscale.cf/post/mit-ocw-18-02-multivariable-calculus-5/" />
+<meta property="article:published_time" content="2019-07-30T00:28:00+00:00" />
+<meta property="article:modified_time" content="2019-07-30T00:28:00+00:00" />
+<meta itemprop="name" content="[MIT OCW] 18.02 Multivariable Calculus - 5 笔记">
+<meta itemprop="description" content="MIT OCW 18.02 Multivariable Calculus">
+<meta itemprop="datePublished" content="2019-07-30T00:28:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-07-30T00:28:00&#43;00:00" />
+<meta itemprop="wordCount" content="321">
+
+
+
+<meta itemprop="keywords" content="MIT 18.02," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[MIT OCW] 18.02 Multivariable Calculus - 5 笔记"/>
+<meta name="twitter:description" content="MIT OCW 18.02 Multivariable Calculus"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">yscale</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">yscale</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">[MIT OCW] 18.02 Multivariable Calculus - 5 笔记</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-07-30 </span>
+        <div class="post-category">
+            <a href="/categories/mooc-notes/"> mooc-notes </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#mit-ocw-1802-multivariable-calculus">MIT OCW 18.02 Multivariable Calculus</a>
+      <ul>
+        <li><a href="#equations-of-lines">Equations of Lines</a>
+          <ul>
+            <li><a href="#intersection-with-a-plane">Intersection with a Plane</a></li>
+          </ul>
+        </li>
+        <li><a href="#parametric-equations-of-curves">Parametric Equations of Curves</a>
+          <ul>
+            <li><a href="#cycloid">Cycloid</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="mit-ocw-1802-multivariable-calculus">MIT OCW 18.02 Multivariable Calculus</h1>
+<h2 id="equations-of-lines">Equations of Lines</h2>
+<p>We have known that a line can be treated as the intersection of two planes, so it&rsquo;s okay to describe a line by two equations, but not that natural.
+Here&rsquo;s another way, a line can be treated as the trajectory of a moving point.</p>
+<p><strong>e.g.</strong> Line through <span class="math inline">\(Q_0(-1,2,2),Q_1(1,3,-1)\)</span></p>
+<p><strong>Solution</strong> Select a point <span class="math inline">\(Q(x,y,z)\)</span> on the plane, and we should have <span class="math inline">\(\mathbf{Q_0Q}=t\mathbf{Q_0Q_1}=(2,1,-3)\)</span> , for some <span class="math inline">\(t\)</span> . Let&rsquo;s consider <span class="math inline">\(t\)</span> as a parameter and expand the formula that is</p>
+<p><span class="math display">\[\begin{bmatrix}x+1\\y-2\\z-2\end{bmatrix}=t\begin{bmatrix}2\\1\\-3\end{bmatrix}.
+\]</span></p>
+<p>We can write <span class="math inline">\(x,y,z\)</span> as functions with respect to <span class="math inline">\(t\)</span> as the following</p>
+<p><span class="math display">\[\left\{\begin{aligned}x(t)&=&-1&+2t\\y(t)&=&2&+t\\z(t)&=&2&-3t\end{aligned}\right..
+\]</span></p>
+<h3 id="intersection-with-a-plane">Intersection with a Plane</h3>
+<p><strong>e.g.</strong> What&rsquo;s <span class="math inline">\(Q_0(-1,2,2)\)</span> and <span class="math inline">\(Q_1(1,3,-1)\)</span> like relative to <span class="math inline">\(x+2y+4z=7\)</span> ?
+Same side / Opposite sides / One is on the plane.</p>
+<p><strong>Solution</strong> The plane <span class="math inline">\(x+2y+4z=7\)</span> is actually dividing the whole space into two regions where one fulfills <span class="math inline">\(x+2y+4z>7\)</span> and the other <span class="math inline">\(x+2y+4z<7\)</span> . We just plugin these two points into the plane equation and check the equality.
+For <span class="math inline">\(Q_0\)</span> , <span class="math inline">\(-1+2\times 2+4\times 2=11>7\)</span> ; and for <span class="math inline">\(Q_1\)</span> , <span class="math inline">\(1+2\times 3+4\times(-1)=3<7\)</span> , so neither of them is on the plane and they are on the opposite sides.
+To get the intersection, we just plug the parametric equation of the line into the plane equation that is</p>
+<p><span class="math display">\[x(t)+2y(t)+4z(t)=7,
+\]</span></p>
+<p>after solving, we can get <span class="math inline">\(t=\frac12\)</span> , and indicating the intersection is <span class="math inline">\((0,\frac25,\frac12)\)</span> .</p>
+<h2 id="parametric-equations-of-curves">Parametric Equations of Curves</h2>
+<h3 id="cycloid">Cycloid</h3>
+<p>The whole process is just a trick in geometry, the parametric equation for a cycloid with radius <span class="math inline">\(a\)</span> is</p>
+<p><span class="math display">\[\left\{
+\begin{aligned}
+x(\theta)&=a(\theta-\sin(\theta))\\
+y(\theta)&=a(1-\cos(\theta))
+\end{aligned}
+\right..
+\]</span></p>
+<p>Let&rsquo;s observe the edge like the place near <span class="math inline">\(\theta=0,2\pi,\cdots\)</span> . Without loss of generality, take <span class="math inline">\(\theta=0\)</span> as an example.
+According to Taylor&rsquo;s theorem, <span class="math inline">\(\sin(\theta)\sim\theta-\frac{\theta^3}{3!}\)</span> and <span class="math inline">\(\cos\theta\sim1-\frac{\theta^2}{2!}\)</span> , consider the slope near <span class="math inline">\(\theta=0\)</span> that is <span class="math inline">\(\frac{y(t)}{x(t)}=\frac{1-\cos(\theta)}{\theta-\sin(\theta)}~\frac{\frac{\theta^2}{2!}}{\frac{\theta^3}{3!}}=\frac{3}{\theta}\to\infty\)</span> , indicating that the behavior near <span class="math inline">\(\theta=0\)</span> is to toggle some motion, which is obvious to be understood when we imagine a wheel rolling on the ground.</p>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">yscale</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2019-07-30
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/mit-18.02/">MIT 18.02</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/mit-ocw-18-02-multivariable-calculus-6/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">[MIT OCW] 18.02 Multivariable Calculus - 6 笔记</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/mit-ocw-18-02-multivariable-calculus-4/">
+            <span class="next-text nav-default">[MIT OCW] 18.02 Multivariable Calculus - 4 笔记</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:yscysc01@hotmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/siger-young" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.zhihu.com/people/yscale" class="iconfont icon-zhihu" title="zhihu"></a>
+  <a href="https://ml.yscale.cf/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">yscale</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+
+
+  <script type="text/javascript">
+    window.MathJax = {
+		  tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']],
+          processEscapes: true,
+          processEnvironments: true,
+        autoload: {
+            color: [],
+            colorV2: ['color']
+          },
+          packages: {'[+]': ['noerrors']}
+      },
+      loader: {
+		  	load: ['input/asciimath', '[tex]/noerrors']
+      }
+    };
+  </script>
+  <script async src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.0.5/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

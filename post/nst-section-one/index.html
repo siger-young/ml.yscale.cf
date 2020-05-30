@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>[Naive Set Theory] Section 1 The Axiom of Extension - yscale - anything about ML</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="yscale" /><meta name="description" content="Naive Set Theory Section 1 The Axiom of Extension 外延公理" /><meta name="keywords" content="yscale" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.72.0-DEV with theme even" />
+
+
+<link rel="canonical" href="https://ml.yscale.cf/post/nst-section-one/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.69f09e7d7e0cd7f81eacea88ee9f3e00c98777bfa20062e4ceb789f830acf508.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="[Naive Set Theory] Section 1 The Axiom of Extension" />
+<meta property="og:description" content="Naive Set Theory Section 1 The Axiom of Extension 外延公理" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ml.yscale.cf/post/nst-section-one/" />
+<meta property="article:published_time" content="2018-07-22T05:39:00+00:00" />
+<meta property="article:modified_time" content="2018-07-22T05:39:00+00:00" />
+<meta itemprop="name" content="[Naive Set Theory] Section 1 The Axiom of Extension">
+<meta itemprop="description" content="Naive Set Theory Section 1 The Axiom of Extension 外延公理">
+<meta itemprop="datePublished" content="2018-07-22T05:39:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-07-22T05:39:00&#43;00:00" />
+<meta itemprop="wordCount" content="701">
+
+
+
+<meta itemprop="keywords" content="Naive Set Theory," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[Naive Set Theory] Section 1 The Axiom of Extension"/>
+<meta name="twitter:description" content="Naive Set Theory Section 1 The Axiom of Extension 外延公理"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">yscale</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">yscale</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">[Naive Set Theory] Section 1 The Axiom of Extension</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-07-22 </span>
+        <div class="post-category">
+            <a href="/categories/mathematics/"> mathematics </a>
+            <a href="/categories/set-theory/"> set-theory </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#naive-set-theory-section-1-the-axiom-of-extension-外延公理"><em>Naive Set Theory</em> Section 1 The Axiom of Extension 外延公理</a>
+      <ul>
+        <li><a href="#前置要点-highlights">前置要点 Highlights</a></li>
+        <li><a href="#阐明-exposition">阐明 Exposition</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="naive-set-theory-section-1-the-axiom-of-extension-外延公理"><em>Naive Set Theory</em> Section 1 The Axiom of Extension 外延公理</h1>
+<h2 id="前置要点-highlights">前置要点 Highlights</h2>
+<blockquote>
+<p><strong>P. 1 Para. 1</strong>: The word &ldquo;class&rdquo; is also used in this context, but there is a slight danger in doing so. The reason is that in some approaches to set theory &ldquo;class&rdquo; has a special technical meaning.</p>
+</blockquote>
+<ul>
+<li>慎用类一词叙述</li>
+</ul>
+<p><strong>类</strong>在集合论中有特殊含义.</p>
+<hr>
+<blockquote>
+<p><strong>P. 1 Para. 2</strong>: One thing that the development will not include is a definition of sets. The situation is analogous to the familiar axiomatic approach to elementary geometry.
+<strong>P. 1 Para. 2</strong>: The semi-axiomatic point of view adopted here assumes that the reader has the ordinary, human, intuitive (and frequently erroneous) understanding of what sets are.</p>
+</blockquote>
+<ul>
+<li>集合的定义实际并不明确.</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>P. 1 Para. 3</strong>: Sets, as they are usually conceived, have <em>elements</em> or <em>members</em>.</p>
+</blockquote>
+<ul>
+<li>集合中有元素.</li>
+</ul>
+<hr>
+<blockquote>
+<p><strong>P. 1 Para. 3</strong>: It is important to know that a set itself may also be an element of some other set.</p>
+</blockquote>
+<ul>
+<li>一个集合可以是<em>另一个</em>集合的元素.</li>
+<li>隐含了有关<a href="https://en.wikipedia.org/wiki/Russell%27s_paradox"><strong>第三次数学危机</strong></a>的内容，也是朴素集合论的缺陷.</li>
+</ul>
+<hr>
+<h2 id="阐明-exposition">阐明 Exposition</h2>
+<ul>
+<li>
+<p>关于字母的一些约定俗成惯例
+字母表靠前的字母表示元素，字母表靠后的字母表示元素所在的集合；或者，小写字母表示元素，大写字母表示元素所在的集合.</p>
+</li>
+<li>
+<p><strong>属于</strong> belonging
+若 <span class="math inline">\(x\)</span> 属于 <span class="math inline">\(A\)</span> （ <span class="math inline">\(x\)</span> 是 <span class="math inline">\(A\)</span> 的一个元素），则写作 <span class="math inline">\(x\in A\)</span> .</p>
+</li>
+<li>
+<p><strong>相等</strong> equality</p>
+<ul>
+<li>集合之间可能的比<strong>属于</strong>更基本的关系就是<strong>相等</strong>.</li>
+<li><span class="math inline">\(A\)</span> 和 <span class="math inline">\(B\)</span> 相等仍然是以熟悉的记号表示为 <span class="math inline">\(A=B\)</span> ;</li>
+<li>同样地， <span class="math inline">\(A\)</span> 和 <span class="math inline">\(B\)</span> 不相等表示为 <span class="math inline">\(A\neq B\)</span> .</li>
+</ul>
+</li>
+<li>
+<p><strong>属于</strong>与<strong>相等</strong>的联系</p>
+<ul>
+<li><strong>外延公理</strong>. <em>两个集合相等当且仅当它们拥有相同的元素</em>.</li>
+<li><del><strong>稍微有逼格一点</strong>，集合由其外延确定.</del></li>
+</ul>
+</li>
+<li>
+<p><strong>子集</strong>和<strong>包含</strong> subset &amp; inclusion</p>
+<ul>
+<li>若 <span class="math inline">\(A\)</span> 和 <span class="math inline">\(B\)</span> 为集合，且 <span class="math inline">\(A\)</span> 的每个元素同样也是 <span class="math inline">\(B\)</span> 的元素之一，那么 <span class="math inline">\(A\)</span> 是 <span class="math inline">\(B\)</span> 的一个<strong>子集</strong>，即 <span class="math inline">\(B\)</span> 包含 <span class="math inline">\(A\)</span> ，表示为 <span class="math inline">\(A\subset B\)</span> 或者 <span class="math inline">\(B \supset A\)</span> .</li>
+<li>若 <span class="math inline">\(A\)</span> 和 <span class="math inline">\(B\)</span> 为集合，且 <span class="math inline">\(A\subset B, A \neq B\)</span> ，那么 <span class="math inline">\(A\)</span> 是 <span class="math inline">\(B\)</span> 的<strong>真子集</strong>.</li>
+</ul>
+</li>
+<li>
+<p>一些性质</p>
+</li>
+</ul>
+<ol>
+<li>(自反性 reflexive) <span class="math inline">\(A\subset A\)</span> .</li>
+<li>(传递性 transitive) <span class="math inline">\(A, B, C\)</span> 都是集合且 <span class="math inline">\(A\subset B, B\subset C\)</span> ，那么 <span class="math inline">\(A\subset C\)</span> .</li>
+<li>(对称性 symmetric) <span class="math inline">\(A=B \Leftrightarrow B=A\)</span> .</li>
+</ol>
+<ul>
+<li>
+<p><strong>外延公理</strong>的重新叙述</p>
+<ul>
+<li><strong>外延公理</strong>. 若 <span class="math inline">\(A\)</span> 和 <span class="math inline">\(B\)</span> 为集合， <span class="math inline">\(A = B \Leftrightarrow A\subset B, B\subset A\)</span> .</li>
+<li>要证明集合 <span class="math inline">\(A\)</span> 和 <span class="math inline">\(B\)</span> 相等，也一般从 <span class="math inline">\(A\subset B\)</span> 和 <span class="math inline">\(B\subset A\)</span> 两个部分入手.</li>
+</ul>
+</li>
+<li>
+<p>辨析</p>
+<ul>
+<li><strong>属于</strong>( <span class="math inline">\(\in\)</span> )和<strong>包含</strong>( <span class="math inline">\(\subset\)</span> )其实是截然不同的东西，但需要注意<strong>包含</strong>具有自反性，即 <span class="math inline">\(A\subset A\)</span> 恒成立；反观<strong>属于</strong>， <span class="math inline">\(A\in A\)</span> ，这是不可能的.</li>
+<li>相关内容可延伸至<a href="https://en.wikipedia.org/wiki/Russell%27s_paradox"><strong>第三次数学危机</strong></a>.</li>
+</ul>
+</li>
+</ul>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">yscale</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2018-07-22
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/naive-set-theory/">Naive Set Theory</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/nst-section-two/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">[Naive Set Theory] Section 2 The Axiom of Specification</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/nst-section-kick-start/">
+            <span class="next-text nav-default">[Naive Set Theory] 开始更新 Naive Set Theory 的读书笔记</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:yscysc01@hotmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/siger-young" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.zhihu.com/people/yscale" class="iconfont icon-zhihu" title="zhihu"></a>
+  <a href="https://ml.yscale.cf/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">yscale</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+
+
+  <script type="text/javascript">
+    window.MathJax = {
+		  tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']],
+          processEscapes: true,
+          processEnvironments: true,
+        autoload: {
+            color: [],
+            colorV2: ['color']
+          },
+          packages: {'[+]': ['noerrors']}
+      },
+      loader: {
+		  	load: ['input/asciimath', '[tex]/noerrors']
+      }
+    };
+  </script>
+  <script async src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.0.5/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

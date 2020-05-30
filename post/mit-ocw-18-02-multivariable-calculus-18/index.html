@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>[MIT OCW] 18.02 Multivariable Calculus - 18 笔记 - yscale - anything about ML</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="yscale" /><meta name="description" content="MIT OCW 18.02 Multivariable Calculus" /><meta name="keywords" content="yscale" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.72.0-DEV with theme even" />
+
+
+<link rel="canonical" href="https://ml.yscale.cf/post/mit-ocw-18-02-multivariable-calculus-18/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.69f09e7d7e0cd7f81eacea88ee9f3e00c98777bfa20062e4ceb789f830acf508.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="[MIT OCW] 18.02 Multivariable Calculus - 18 笔记" />
+<meta property="og:description" content="MIT OCW 18.02 Multivariable Calculus" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ml.yscale.cf/post/mit-ocw-18-02-multivariable-calculus-18/" />
+<meta property="article:published_time" content="2019-08-19T19:24:00+00:00" />
+<meta property="article:modified_time" content="2019-08-19T19:24:00+00:00" />
+<meta itemprop="name" content="[MIT OCW] 18.02 Multivariable Calculus - 18 笔记">
+<meta itemprop="description" content="MIT OCW 18.02 Multivariable Calculus">
+<meta itemprop="datePublished" content="2019-08-19T19:24:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-08-19T19:24:00&#43;00:00" />
+<meta itemprop="wordCount" content="260">
+
+
+
+<meta itemprop="keywords" content="MIT 18.02," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[MIT OCW] 18.02 Multivariable Calculus - 18 笔记"/>
+<meta name="twitter:description" content="MIT OCW 18.02 Multivariable Calculus"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">yscale</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">yscale</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">[MIT OCW] 18.02 Multivariable Calculus - 18 笔记</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-08-19 </span>
+        <div class="post-category">
+            <a href="/categories/mooc-notes/"> mooc-notes </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#mit-ocw-1802-multivariable-calculus">MIT OCW 18.02 Multivariable Calculus</a>
+      <ul>
+        <li><a href="#substitution-of-variables">Substitution of Variables</a>
+          <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#jacobian-matrix">Jacobian Matrix</a></li>
+            <li><a href="#validation-for-polar-cartesian-conversion">Validation for Polar-Cartesian Conversion</a></li>
+            <li><a href="#examples">Examples</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="mit-ocw-1802-multivariable-calculus">MIT OCW 18.02 Multivariable Calculus</h1>
+<h2 id="substitution-of-variables">Substitution of Variables</h2>
+<h3 id="introduction">Introduction</h3>
+<p><strong>e.g.</strong> Calculate the area of a ellipse <span class="math inline">\(\left(\frac{x}{a}\right)^2+\left(\frac{y}{b}\right)^2=1\)</span> with substitution <span class="math inline">\(u=\frac{x}{a},v=\frac{y}{b}\)</span> .</p>
+<p><strong>Solution</strong> From the substitution, we can find that</p>
+<p><span class="math display">\[\mathrm{d}x=a\mathrm{d}u,\mathrm{d}y=b\mathrm{d}v,
+\]</span></p>
+<p>so we can convert it</p>
+<p><span class="math display">\[\begin{aligned}\iint_R\mathrm{d}x\mathrm{dy}&=ab\iint_{R'}\mathrm{d}u\mathrm{d}v\\&=ab\iint_{u^2+v^2\leq 1}\mathrm{d}u\mathrm{d}v\\&=\pi ab.\end{aligned}
+\]</span></p>
+<p><strong>e.g.</strong> Find the scaling factor between <span class="math inline">\(\mathrm{d}x\mathrm{d}y\)</span> and <span class="math inline">\(\mathrm{d}u\mathrm{d}v\)</span> with <span class="math inline">\(u=3x-2y,v=x+y\)</span> .</p>
+<p><strong>Solution</strong> We can write such transformation in matrix form</p>
+<p><span class="math display">\[\begin{bmatrix}u\\v\end{bmatrix}=\begin{bmatrix}3&-2\\1&1\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix}.
+\]</span></p>
+<p>And note the core here is the matrix <span class="math inline">\(\begin{bmatrix}3&-2\\1&1\end{bmatrix}\)</span> , it represents the transformation and its determinant is just the scaling factor but with a sign. So the scaling factor here is <span class="math inline">\(\begin{vmatrix}3&-2\\1&1\end{vmatrix}=5\)</span> .</p>
+<h3 id="jacobian-matrix">Jacobian Matrix</h3>
+<p>The total differential of a transform <span class="math inline">\(u=u(x,y),v=v(x,y)\)</span> is</p>
+<p><span class="math display">\[\begin{aligned}\mathrm{d}u&=u_{x}\mathrm{d}x+u_{y}\mathrm{d}y\\\mathrm{d}v&=v_{x}\mathrm{d}x+u_{v}\mathrm{d}y,
+\end{aligned}
+\]</span></p>
+<p>and write it in matrix form</p>
+<p><span class="math display">\[\begin{bmatrix}\mathrm{d}u\\\mathrm{d}v\end{bmatrix}=\begin{bmatrix}u_x&u_y\\v_x&v_y\end{bmatrix}\begin{bmatrix}\mathrm{d}x\\\mathrm{d}y\end{bmatrix}.
+\]</span></p>
+<p>Here, the matrix containing several partial derivatives are called <strong>Jacobian matrix</strong>, and usually write it as</p>
+<p><span class="math display">\[\mathbf{J}=\frac{\partial(u,v)}{\partial(x,y)}=\begin{bmatrix}u_x&u_y\\v_x&v_y\end{bmatrix}.
+\]</span></p>
+<p>And its determinant <span class="math inline">\(|\mathbf{J}|\)</span> is the scaling factor.</p>
+<h3 id="validation-for-polar-cartesian-conversion">Validation for Polar-Cartesian Conversion</h3>
+<p>The transformation here is <span class="math inline">\(x=r\cos(\theta),y=r\sin(\theta)\)</span> , the Jacobian determinant is</p>
+<p><span class="math display">\[\left|\frac{\partial(x,y)}{\partial(r,\theta)}\right|=\begin{vmatrix}x_r&x_\theta\\y_r&y_\theta\end{vmatrix}=\begin{vmatrix}\cos(\theta)&-r\sin(\theta)\\\sin(\theta)&r\cos(\theta)\end{vmatrix}=r,
+\]</span></p>
+<p>so we have</p>
+<p><span class="math display">\[\mathrm{d}x\mathrm{d}y=r\mathrm{d}r\mathrm{d}\theta.
+\]</span></p>
+<h3 id="examples">Examples</h3>
+<p><strong>e.g.</strong> Compute <span class="math inline">\(\int_0^1\int_0^1x^2y\mathrm{d}x\mathrm{d}y\)</span> with substitution <span class="math inline">\(u=x,v=xy\)</span> .</p>
+<p><strong>Solution</strong> The Jacobian determinant is</p>
+<p><span class="math display">\[\left|\frac{\partial(u,v)}{\partial(x,y)}\right|=\begin{vmatrix}u_x&u_y\\v_x&v_y\end{vmatrix}=\begin{vmatrix}1&0\\y&x\end{vmatrix}=x,
+\]</span></p>
+<p>therefore we have</p>
+<p><span class="math display">\[\mathrm{d}x\mathrm{d}y=\frac1x\mathrm{d}u\mathrm{d}v.
+\]</span></p>
+<p>Another thing to consider is the new region, according to the substitution we have <span class="math inline">\(v=y\cdot u\)</span> .
+In an <span class="math inline">\(uv\)</span> plane, <span class="math inline">\(v=y\cdot u, u\in[0,1]\)</span> is a segment through the origin, and <span class="math inline">\(y\)</span> becomes its slope, and it varies since <span class="math inline">\(y\in[0,1]\)</span> , so it becomes a triangular region.
+Here&rsquo;s the comparison of two regions.
+<img src="/old/uploads/2019/08/3600064959.png" alt="substitution-region-original.png">
+<img src="/old/uploads/2019/08/2582427470.png" alt="substitution-region-new.png">
+So the integral becomes</p>
+<p><span class="math display">\[\begin{aligned}\int_0^1\int_0^1x^2y\mathrm{d}x\mathrm{d}y&=\iint_{R'}x^2y\frac1x\mathrm{d}u\mathrm{d}v\\&=\iint_{R'}v\mathrm{d}v\mathrm{d}u\\&=\int_0^1\int_0^{u}v\mathrm{d}v\mathrm{d}u\\&=\int_0^1\left[\frac12v^2\right]^u_0\mathrm{d}u\\&=\int_0^1\frac12u^2\mathrm{d}u\\&=\left[\frac16u^3\right]^1_0\\&=\frac16.\end{aligned}
+\]</span></p>
+<p>Since the original integral is not difficult to compute, so the answer can be checked easily.</p>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">yscale</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2019-08-19
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/mit-18.02/">MIT 18.02</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/mit-ocw-18-02-multivariable-calculus-19/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">[MIT OCW] 18.02 Multivariable Calculus - 19 笔记</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/2013-gaokao-multiple-solutions/">
+            <span class="next-text nav-default">2013 年上海高考数学卷一道题的多种解法</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:yscysc01@hotmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/siger-young" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.zhihu.com/people/yscale" class="iconfont icon-zhihu" title="zhihu"></a>
+  <a href="https://ml.yscale.cf/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">yscale</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+
+
+  <script type="text/javascript">
+    window.MathJax = {
+		  tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']],
+          processEscapes: true,
+          processEnvironments: true,
+        autoload: {
+            color: [],
+            colorV2: ['color']
+          },
+          packages: {'[+]': ['noerrors']}
+      },
+      loader: {
+		  	load: ['input/asciimath', '[tex]/noerrors']
+      }
+    };
+  </script>
+  <script async src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.0.5/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

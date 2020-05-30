@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>[MIT OCW] 18.02 Multivariable Calculus - 8, 9, 10 笔记 - yscale - anything about ML</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="yscale" /><meta name="description" content="MIT OCW 18.02 Multivariable Calculus" /><meta name="keywords" content="yscale" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.72.0-DEV with theme even" />
+
+
+<link rel="canonical" href="https://ml.yscale.cf/post/mit-ocw-18-02-multivariable-calculus-8-9-10/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.69f09e7d7e0cd7f81eacea88ee9f3e00c98777bfa20062e4ceb789f830acf508.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="[MIT OCW] 18.02 Multivariable Calculus - 8, 9, 10 笔记" />
+<meta property="og:description" content="MIT OCW 18.02 Multivariable Calculus" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ml.yscale.cf/post/mit-ocw-18-02-multivariable-calculus-8-9-10/" />
+<meta property="article:published_time" content="2019-07-31T13:23:00+00:00" />
+<meta property="article:modified_time" content="2019-07-31T13:23:00+00:00" />
+<meta itemprop="name" content="[MIT OCW] 18.02 Multivariable Calculus - 8, 9, 10 笔记">
+<meta itemprop="description" content="MIT OCW 18.02 Multivariable Calculus">
+<meta itemprop="datePublished" content="2019-07-31T13:23:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-07-31T13:23:00&#43;00:00" />
+<meta itemprop="wordCount" content="1136">
+
+
+
+<meta itemprop="keywords" content="MIT 18.02," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[MIT OCW] 18.02 Multivariable Calculus - 8, 9, 10 笔记"/>
+<meta name="twitter:description" content="MIT OCW 18.02 Multivariable Calculus"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">yscale</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">yscale</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">[MIT OCW] 18.02 Multivariable Calculus - 8, 9, 10 笔记</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-07-31 </span>
+        <div class="post-category">
+            <a href="/categories/mooc-notes/"> mooc-notes </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#mit-ocw-1802-multivariable-calculus">MIT OCW 18.02 Multivariable Calculus</a>
+      <ul>
+        <li><a href="#basics-of-multivariable-functions">Basics of Multivariable Functions</a>
+          <ul>
+            <li><a href="#map">Map</a></li>
+            <li><a href="#domain">Domain</a></li>
+          </ul>
+        </li>
+        <li><a href="#graph">Graph</a>
+          <ul>
+            <li><a href="#contour-plot">Contour Plot</a></li>
+          </ul>
+        </li>
+        <li><a href="#partial-derivatives">Partial Derivatives</a></li>
+        <li><a href="#approximation">Approximation</a></li>
+        <li><a href="#maxima--minima">Maxima / Minima</a>
+          <ul>
+            <li><a href="#critical-points">Critical Points</a></li>
+            <li><a href="#saddle-points">Saddle Points</a></li>
+            <li><a href="#application">Application</a>
+              <ul>
+                <li><a href="#least-square-interpolation">Least-square Interpolation</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#validation-by-second-derivatives">Validation by Second Derivatives</a>
+          <ul>
+            <li><a href="#special-cases">Special Cases</a>
+              <ul>
+                <li><a href="#completing-squares">Completing Squares</a></li>
+                <li><a href="#homogenous-equation">Homogenous Equation</a></li>
+              </ul>
+            </li>
+            <li><a href="#second-derivative-test">Second Derivative Test</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="mit-ocw-1802-multivariable-calculus">MIT OCW 18.02 Multivariable Calculus</h1>
+<h2 id="basics-of-multivariable-functions">Basics of Multivariable Functions</h2>
+<h3 id="map">Map</h3>
+<p>At a higher point of view, a single variable function maps some number to a number, and a multivariable function maps some <span class="math inline">\(n\)</span> -tuple to a number. The essence of a function doesn&rsquo;t change.</p>
+<h3 id="domain">Domain</h3>
+<p>Like a single variable function, a multivariable function have its domain, like</p>
+<p><span class="math display">\[f(x,y)=x^2+y^2
+\]</span></p>
+<p>can be defined all the time, and</p>
+<p><span class="math display">\[f(x,y)=\sqrt{y}
+\]</span></p>
+<p>is only defined when <span class="math inline">\(y\geq 0\)</span> .</p>
+<h2 id="graph">Graph</h2>
+<p>It&rsquo;s difficult to plot a multivariable function accurately, but the main idea doesn&rsquo;t change.</p>
+<p><strong>e.g.</strong> Plot the graph of <span class="math inline">\(f(x,y)=-y\)</span> .
+Consider the <span class="math inline">\(yz\)</span> plane, it&rsquo;s just a line through origin. And now we move the value of <span class="math inline">\(x\)</span> , and it doesn&rsquo;t depend on the value <span class="math inline">\(x\)</span> , so it will be a plane.
+<img src="/old/uploads/2019/07/1909456760.png" alt="z=-y.png"></p>
+<p><strong>e.g.</strong> Plot the graph of <span class="math inline">\(f(x,y)=1-x^2-y^2\)</span> .
+Consider the <span class="math inline">\(yz\)</span> plane, where <span class="math inline">\(x=0\)</span> , it will be a parabola with the quation <span class="math inline">\(z=1-y^2\)</span> . Similarly, the part on <span class="math inline">\(xz\)</span> plane is still a parabola with the quation <span class="math inline">\(z=1-x^2\)</span> .
+But if we consider the graph on the <span class="math inline">\(xy\)</span> plane, where <span class="math inline">\(z=0\)</span> , we&rsquo;ll get a unit circle that is <span class="math inline">\(x^2+y^2=1\)</span> .
+<img src="/old/uploads/2019/07/640288293.png" alt="1-x2-y2.png"></p>
+<h3 id="contour-plot">Contour Plot</h3>
+<p>The process of a traditional plot is hard and not that easy to understand. Take the last example, we can draw a contour plot like the following
+<img src="/old/uploads/2019/07/1629113623.png" alt="contour.png">
+which indicated where the function achieves the same value on the <span class="math inline">\(xy\)</span> plane.
+We can feel the change of the function by observing the gap between curves and know how the function changes along some direction.</p>
+<h2 id="partial-derivatives">Partial Derivatives</h2>
+<p>We care about the change rate of a multivariable function, but it has several variables. What we do is just convert the multivariable function into a single variable function, that is treat other variables as constants.
+Given a function <span class="math inline">\(f(x,y)\)</span> , the partial derivative at point <span class="math inline">\((x_0,y_0)\)</span> of <span class="math inline">\(f\)</span> with respect to <span class="math inline">\(x\)</span> is</p>
+<p><span class="math display">\[\frac{\partial f}{\partial x}(x_0,y_0)=\lim_{\Delta x\to 0}\frac{f(x_0+\Delta x, y_0)-f(x_0, y_0)}{\Delta x},
+\]</span></p>
+<p>and generally the partial derivative of <span class="math inline">\(f\)</span> with respect to <span class="math inline">\(x\)</span> is a multivariable function that is</p>
+<p><span class="math display">\[f_x=\frac{\partial f}{\partial x}=\lim_{\Delta x\to 0}\frac{f(x+\Delta x, y)-f(x, y)}{\Delta x}.
+\]</span></p>
+<h2 id="approximation">Approximation</h2>
+<p>Like the linear approximation in single variable function, a multivariable function also has approximation. That is</p>
+<p><span class="math display">\[\Delta f(x,y)\approx f_x\Delta x+f_y\Delta y.
+\]</span></p>
+<p>Why is it correct?
+Thinking about the following assumption</p>
+<p><span class="math display">\[\left\{\begin{aligned}f_x(x_0,y_0)=a\\f_y(x_0,y_0)=b\end{aligned}\right.,
+\]</span></p>
+<p>and we have two tangent lines</p>
+<p><span class="math display">\[l_1:\left\{\begin{aligned}z&=z_0+a(x-x_0)\\y&=y_0\end{aligned}\right.,l_2:\left\{\begin{aligned}z&=z_0+b(y-y_0)\\x&=x_0\end{aligned}\right..
+\]</span></p>
+<p>And these two lines can determine a tangent plane <span class="math inline">\(z=z_0+a(x-x_0)+b(y-y_0)\)</span> .</p>
+<h2 id="maxima--minima">Maxima / Minima</h2>
+<p>At local maxima or minima, we have <span class="math inline">\(f_x(x_0,y_0)=0\)</span> and <span class="math inline">\(f_y(x_0,y_0)=0\)</span> , which means the point has a horizontal tangent plane.</p>
+<h3 id="critical-points">Critical Points</h3>
+<p>Point <span class="math inline">\((x,y)\)</span> is a critical point of <span class="math inline">\(f\)</span> if <span class="math inline">\(f_x(x_0,y_0)=0\)</span> and <span class="math inline">\(f_y(x_0,y_0)=0\)</span> .</p>
+<p><strong>e.g.</strong> Find critical points for <span class="math inline">\(f(x,y)=x^2-2xy+3y^2+2x-2y\)</span> .</p>
+<p><strong>Solution</strong> According to definition, we get</p>
+<p><span class="math display">\[\left\{\begin{aligned}f_x&=2x-2y+2\\f_y&=-2x+6y-2=0\end{aligned}\right.,
+\]</span></p>
+<p>and we can solve the critical point that is <span class="math inline">\((-1,0)\)</span> .
+But what&rsquo;s the minima?
+Notice that</p>
+<p><span class="math display">\[f(x,y)=x^2-2xy+3y^2+2x-2y=(x-y+1)+2y^2-1\geq -1,
+\]</span></p>
+<p>and we plug <span class="math inline">\((-1,0)\)</span> into it, it&rsquo;s exactly <span class="math inline">\(-1\)</span> , so we get local and global minima at <span class="math inline">\((-1,0)\)</span> .</p>
+<h3 id="saddle-points">Saddle Points</h3>
+<p>Focus on the condition <span class="math inline">\(f_x(x_0,y_0)=0\)</span> and <span class="math inline">\(f_y(x_0,y_0)=0\)</span> , it&rsquo;s neccessary but not sufficient in terms of maxima or minima. Because we could have some examples that <span class="math inline">\(f_x(x_0,y_0)=0\)</span> and <span class="math inline">\(f_y(x_0,y_0)=0\)</span> where the function doesn&rsquo;t have local minima or maxima at <span class="math inline">\((x_0,y_0)\)</span> .
+For example, the function <span class="math inline">\(f(x,y)=x^2-y^2\)</span> .
+<img src="/old/uploads/2019/07/2686925380.png" alt="x2-y2.png">
+It&rsquo;s easy to validate that <span class="math inline">\(f_x(0,0)=0,f_y(0,0)=0\)</span> , anyhow, it doesn&rsquo;t achieve maxima or minima at the point, these points are called saddle points.</p>
+<h3 id="application">Application</h3>
+<h4 id="least-square-interpolation">Least-square Interpolation</h4>
+<p>When we are given a lot of discrete data (often seen in scientific experiments), we want to find some line to approximate these data, and enable us to find the relation between variables and predict their value.
+Considering the data set <span class="math inline">\((x_1,y_1),(x_2,y_2),\cdots,(x_n,y_n)\)</span> and the target line <span class="math inline">\(y=ax+b\)</span> , how to optimize the line in order that the line become best for discrete data? Actually, it&rsquo;s a minima problem.
+As a convention, the indicator we use here is the offset squared, for each data <span class="math inline">\((x_i,y_i)\)</span> that is <span class="math inline">\((ax_i+b-y_i)^2\)</span> , so the function we&rsquo;d like to analyze is</p>
+<p><span class="math display">\[D(a,b)=\sum_1^n (ax_i+b-y_i)^2,
+\]</span></p>
+<p>whose minima we want to find.
+We take the partial derivative with respect to <span class="math inline">\(a,b\)</span></p>
+<p><span class="math display">\[\frac{\partial D}{\partial a}=\sum_1^n [2(ax_i+b-y_i)x_i],\frac{\partial D}{\partial b}=\sum_1^n [2(ax_i+b-y_i)],
+\]</span></p>
+<p>and to get the critical point, we solve the system</p>
+<p><span class="math display">\[\left\{\begin{aligned}&\frac{\partial D}{\partial a}=0\\&\frac{\partial D}{\partial b}=0\end{aligned}\right.,
+\]</span></p>
+<p>namely</p>
+<p><span class="math display">\[\left\{\begin{aligned}&\left(\sum_1^nx_i^2\right)a+\left(\sum_1^nx_i\right)b=\sum_1^nx_iy_i\\&\left(\sum_1^nx_i\right)a+nb=\sum_1^ny_i\end{aligned}\right..
+\]</span></p>
+<h2 id="validation-by-second-derivatives">Validation by Second Derivatives</h2>
+<h3 id="special-cases">Special Cases</h3>
+<h4 id="completing-squares">Completing Squares</h4>
+<p>Consider the following function behavior at origin</p>
+<p><span class="math display">\[f(x,y)=ax^2+bxy+cy^2,
+\]</span></p>
+<p>and we try to complete the square here to judge whether the function can achieve maxima or minima at origin, namely</p>
+<p><span class="math display">\[\begin{aligned}f(x,y)&=a\left(x^2+\frac{b}{a}xy\right)+cy^2\\&=a\left(x+\frac{b}{2a}y\right)^2-\frac{b^2}{4a}y^2+cy^2\\&=a\left(x+\frac{b}{2a}y\right)^2+\frac{4ac-b^2}{4a}y^2\\&=\frac1{4a}\left[4a^2\left(x+\frac{b}{2a}y\right)^2+(4ac-b^2)y^2\right].\end{aligned}
+\]</span></p>
+<p>It&rsquo;s obvious that the origin is a critical point because</p>
+<p><span class="math display">\[\frac{\partial f}{\partial x}=2ax+by,\frac{\partial f}{\partial y}=2cy+bx.
+\]</span></p>
+<p>And plug the origin into these, easy to get they are <span class="math inline">\(0\)</span> , the problem here is can <span class="math inline">\(f(0,0)\)</span> be the true local maxima or minima?
+Observe the completed part, the signs before two squared terms are interesting, <span class="math inline">\(4a^2\)</span> is always positive, and <span class="math inline">\(4ac-b^2\)</span> is not determined.
+If <span class="math inline">\(4ac-b^2>0\)</span> , then the parts in bracket are two non-negative terms, and have to be non-negative. And <span class="math inline">\(f(0,0)=0\)</span> , then it has local maxima or minima (depending on the sign of <span class="math inline">\(\frac1{4a}\)</span> , namely <span class="math inline">\(a\)</span> ).
+If <span class="math inline">\(4ac-b^2=0\)</span> , the function will depends on only one variable <span class="math inline">\(x\)</span> , and the behavior here cannot be concluded. In this special case, it will be local maxima or minima, where any point <span class="math inline">\((0,t)\)</span> will achive.
+If <span class="math inline">\(4ac-b^2<0\)</span> , then the parts in bracket are one non-negative, the other non-positive, so it&rsquo;s possible to get either positive or negative value. So <span class="math inline">\(f(0,0)\)</span> cannot be maxima or minima, it&rsquo;s a saddle point.</p>
+<h4 id="homogenous-equation">Homogenous Equation</h4>
+<p>We find that quadratic discriminant <span class="math inline">\(b^2-4ac\)</span> occur in the analysis above, is that a coincidence?
+Still the example above, notice that each term is quadratic, so</p>
+<p><span class="math display">\[f(x,y)=y^2\left(a\left(\frac{x}{y}\right)^2+b\left(\frac{x}{y}\right)+c\right),
+\]</span></p>
+<p>and near the origin, <span class="math inline">\(\frac{x}{y}\)</span> can be any number.
+If the equation <span class="math inline">\(at^2+bt+c=0\)</span> has two roots, namely, <span class="math inline">\(b^2-4ac>0\)</span> , it means that the function can achieve two sides of <span class="math inline">\(0\)</span> , and it keeps <span class="math inline">\(0\)</span> on some direction ( <span class="math inline">\(\frac{x}{y}\)</span> indicates the direction when approaching the origin).
+<img src="/old/uploads/2019/08/3874810908.png" alt="quad-root-up.png"><img src="/old/uploads/2019/08/444253504.png" alt="quad-root-down.png">
+If the equation <span class="math inline">\(at^2+bt+c=0\)</span> has only one root, namely, <span class="math inline">\(b^2-4ac=0\)</span> , actually it can&rsquo;t be concluded, anyhow, it indicates that on some direction, the function keeps its value at origin.
+If the equation <span class="math inline">\(at^2+bt+c=0\)</span> has no roots, namely, <span class="math inline">\(b^2-4ac<0\)</span> , it means that <span class="math inline">\(f(0,0)=0\)</span> will be exactly local maxima or minima (depending on the sign of <span class="math inline">\(a\)</span> ), because near the origin, the function value can&rsquo;t be zero.
+<img src="/old/uploads/2019/08/3259334859.png" alt="quad-noroot.png"></p>
+<h3 id="second-derivative-test">Second Derivative Test</h3>
+<p>According to multivariable quadratic Taylor&rsquo;s formula</p>
+<p><span class="math display">\[\Delta f\approx f_x(x-x_0)+f_y(y-y_0)+\frac12f_{xx}(x-x_0)^2+f_{xy}(x-x_0)(y-y_0)+\frac12f_{yy}(y-y_0)^2,
+\]</span></p>
+<p>we can have a general test on other functions.
+To test a critical point <span class="math inline">\((x_0,y_0)\)</span> of <span class="math inline">\(f\)</span> , let</p>
+<p><span class="math display">\[A=f_{xx}(x_0,y_0),B=f_{xy}(x_0,y_0),C=f_{yy}(x_0,y_0),
+\]</span></p>
+<ul>
+<li>
+<p>if <span class="math inline">\(AC-B^2>0\)</span></p>
+<ul>
+<li>if <span class="math inline">\(A>0\)</span> , we get local minima at <span class="math inline">\((x_0,y_0)\)</span></li>
+<li>if <span class="math inline">\(A<0\)</span> , we get local maxima at <span class="math inline">\((x_0,y_0)\)</span></li>
+</ul>
+</li>
+<li>
+<p>if <span class="math inline">\(AC-B^2<0\)</span> , then it&rsquo;s a saddle point</p>
+</li>
+<li>
+<p>if <span class="math inline">\(AC-B^2=0\)</span> , no conclusion</p>
+</li>
+</ul>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">yscale</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2019-07-31
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/mit-18.02/">MIT 18.02</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/mit-ocw-18-02-multivariable-calculus-11/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">[MIT OCW] 18.02 Multivariable Calculus - 11 笔记</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/mit-ocw-18-02-multivariable-calculus-6/">
+            <span class="next-text nav-default">[MIT OCW] 18.02 Multivariable Calculus - 6 笔记</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:yscysc01@hotmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/siger-young" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.zhihu.com/people/yscale" class="iconfont icon-zhihu" title="zhihu"></a>
+  <a href="https://ml.yscale.cf/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">yscale</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+
+
+  <script type="text/javascript">
+    window.MathJax = {
+		  tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']],
+          processEscapes: true,
+          processEnvironments: true,
+        autoload: {
+            color: [],
+            colorV2: ['color']
+          },
+          packages: {'[+]': ['noerrors']}
+      },
+      loader: {
+		  	load: ['input/asciimath', '[tex]/noerrors']
+      }
+    };
+  </script>
+  <script async src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.0.5/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

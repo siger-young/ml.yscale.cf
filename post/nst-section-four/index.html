@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>[Naive Set Theory] Section 4 Unions and Intersections - yscale - anything about ML</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="yscale" /><meta name="description" content="Naive Set Theory Section 4 Unions and Intersections 并集交集" /><meta name="keywords" content="yscale" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.72.0-DEV with theme even" />
+
+
+<link rel="canonical" href="https://ml.yscale.cf/post/nst-section-four/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.69f09e7d7e0cd7f81eacea88ee9f3e00c98777bfa20062e4ceb789f830acf508.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="[Naive Set Theory] Section 4 Unions and Intersections" />
+<meta property="og:description" content="Naive Set Theory Section 4 Unions and Intersections 并集交集" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ml.yscale.cf/post/nst-section-four/" />
+<meta property="article:published_time" content="2018-08-05T04:31:00+00:00" />
+<meta property="article:modified_time" content="2018-08-05T04:31:00+00:00" />
+<meta itemprop="name" content="[Naive Set Theory] Section 4 Unions and Intersections">
+<meta itemprop="description" content="Naive Set Theory Section 4 Unions and Intersections 并集交集">
+<meta itemprop="datePublished" content="2018-08-05T04:31:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-08-05T04:31:00&#43;00:00" />
+<meta itemprop="wordCount" content="804">
+
+
+
+<meta itemprop="keywords" content="Naive Set Theory," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[Naive Set Theory] Section 4 Unions and Intersections"/>
+<meta name="twitter:description" content="Naive Set Theory Section 4 Unions and Intersections 并集交集"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">yscale</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">yscale</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">[Naive Set Theory] Section 4 Unions and Intersections</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-08-05 </span>
+        <div class="post-category">
+            <a href="/categories/mathematics/"> mathematics </a>
+            <a href="/categories/set-theory/"> set-theory </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#naive-set-theory-section-4-unions-and-intersections-并集交集"><em>Naive Set Theory</em> Section 4 Unions and Intersections 并集交集</a>
+      <ul>
+        <li><a href="#阐明-exposition">阐明 Exposition</a></li>
+        <li><a href="#习题-exercise">习题 Exercise</a></li>
+        <li><a href="#参考-reference">参考 Reference</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="naive-set-theory-section-4-unions-and-intersections-并集交集"><em>Naive Set Theory</em> Section 4 Unions and Intersections 并集交集</h1>
+<h2 id="阐明-exposition">阐明 Exposition</h2>
+<ul>
+<li>
+<p><strong>并集公理</strong>与<strong>并集</strong></p>
+<ul>
+<li><strong>并集公理</strong>. 对于任意的 集的集合 <span class="math inline">\(A\)</span> ，总存在一个集合 <span class="math inline">\(U\)</span> 拥有所有至少属于 <span class="math inline">\(A\)</span> 中一个集合 <span class="math inline">\(X\)</span> 的元素. (讲道理如果用书上的语言变成中文，我自己觉得别扭，英语更适合阐述这样的语句.)</li>
+<li><span class="math inline">\(\displaystyle \forall A,\exists U,\forall x:x\in U\iff (\exists X:x\in X\land X\in A)\)</span></li>
+<li>可能是我第一次贴较为标准化的数学语言叙述，理解一下并不难. (实际上此处有些地方没有加括号，若理解有困难，可看 Wikipedia 并集公理<a href="https://en.wikipedia.org/wiki/Axiom_of_union"><sup>1</sup></a>的写法.)</li>
+<li><span class="math inline">\(U\)</span> 叫做 <span class="math inline">\(A\)</span> 的<strong>并集</strong>.</li>
+<li>使用<strong>分类公理</strong>我们可表达成 <span class="math inline">\(U = \{x:\exists X\in A, x\in X\}\)</span> ，</li>
+<li><strong>并集公理</strong>旨在阐明一个集合的并集是一个集合.</li>
+</ul>
+</li>
+<li>
+<p><strong>并集</strong>记号</p>
+<ul>
+<li>若使用 <span class="math inline">\(A\)</span> 来表示集合 <span class="math inline">\(U\)</span> ，可写为 <span class="math inline">\(\bigcup A\)</span> .</li>
+<li>若使用 <span class="math inline">\(A\)</span> 中的集合 <span class="math inline">\(X\)</span> 来表示集合 <span class="math inline">\(U\)</span> ，可写为 <span class="math inline">\(\bigcup_{X\in A} X\)</span> .</li>
+<li>一般地，对于 <span class="math inline">\(U\)</span> 中若只有两个集合 <span class="math inline">\(A,B\)</span> ，那么此时 <span class="math inline">\(U\)</span> 的并集可写为 <span class="math inline">\(\big\{X:X\in \{A,B\}\} = A\cup B = \{x: x\in A \lor x\in B\}\)</span></li>
+</ul>
+</li>
+<li>
+<p><strong>并集</strong>的一些性质</p>
+<ul>
+<li><span class="math inline">\(\bigcup \{X:X\in \varnothing\}=\varnothing\)</span> 即 <span class="math inline">\(\bigcup \varnothing = \varnothing\)</span> .</li>
+<li><span class="math inline">\(\bigcup \{X:X\in \{A\}\} = A\)</span> 即 <span class="math inline">\(\bigcup \{A\} = A\)</span> .</li>
+<li><span class="math inline">\(A\cup \varnothing = A\)</span></li>
+<li><span class="math inline">\(A\cup B = B \cup A\)</span> . (交换律)</li>
+<li><span class="math inline">\(A\cup(B\cup C) = (A\cup B)\cup C\)</span> = <span class="math inline">\(A\cup B\cup C\)</span> . (结合律)</li>
+<li><span class="math inline">\(A\cup A = A\)</span> . (幂等性)</li>
+<li><span class="math inline">\(A\subset B \Leftrightarrow A\cup B = B\)</span></li>
+</ul>
+</li>
+<li>
+<p>一般化<strong>对</strong></p>
+<ul>
+<li>一个事实 <span class="math inline">\(\{a\}\cup \{b\} = \{a, b\}\)</span></li>
+<li>将 <span class="math inline">\(\{a, b, c\}\)</span> 定义为 <span class="math inline">\(\{a,b,c\} = \{a\}\cup\{b\}\cup\{c\}\)</span></li>
+<li>证得 <span class="math inline">\(\{a,b,c\} = \{x:x=a \lor x=b \lor x=c\}\)</span> .这样的<strong>无序多元组</strong>是确定的.</li>
+</ul>
+</li>
+<li>
+<p><strong>交集</strong></p>
+<ul>
+<li>集合 <span class="math inline">\(A, B\)</span> 的<strong>交集</strong>定义为 <span class="math inline">\(A\cap B = \{x\in A:x\in B\}\)</span> .</li>
+<li>自然有 <span class="math inline">\(A\cap B = \{x: x\in A \land x\in B\}\)</span> .</li>
+</ul>
+</li>
+<li>
+<p><strong>交集</strong>的一些性质</p>
+<ul>
+<li><span class="math inline">\(A\cap \varnothing = \varnothing\)</span></li>
+<li><span class="math inline">\(A\cap B = B \cap A\)</span> . (交换律)</li>
+<li><span class="math inline">\(A\cap(B\cap C) = (A\cap B)\cap C\)</span> = <span class="math inline">\(A\cap B\cap C\)</span> . (结合律)</li>
+<li><span class="math inline">\(A\cap A = A\)</span> . (幂等性)</li>
+<li><span class="math inline">\(A\subset B \Leftrightarrow A\cap B = A\)</span></li>
+</ul>
+</li>
+<li>
+<p><strong>不交</strong>和<strong>不交集</strong></p>
+<ul>
+<li>如果 <span class="math inline">\(A\cap B = \varnothing\)</span> ，则集合 <span class="math inline">\(A,B\)</span> <strong>不交</strong>，是一对<strong>不交集</strong>.</li>
+</ul>
+</li>
+<li>
+<p>并集和交集的分配律</p>
+<ul>
+<li><span class="math inline">\(A\cap(B\cup C) = (A\cap B)\cup (A\cap C)\)</span> .</li>
+<li><span class="math inline">\(A\cup(B\cap C) = (A\cup B)\cap (A\cup C)\)</span> .</li>
+</ul>
+</li>
+</ul>
+<p><em><strong>思考</strong></em>: 并集由并集公理导出，而交集是直接定义的原因.
+根据<strong>分类公理</strong>，我们能够直接定义二元关系的交集，即 <span class="math inline">\(\{x\in A: x\in B\}\)</span> . 注意到<strong>分类公理</strong>能够构造子集，而我们所需要的<strong>并集</strong>，它是一个更大的集合，因此需要有<strong>并集公理</strong>.</p>
+<ul>
+<li>
+<p>模仿<strong>并集公理</strong>审视<strong>交集</strong></p>
+<ul>
+<li><span class="math inline">\(V = \{x: \forall X \in A, x\in X\}\)</span> .</li>
+</ul>
+</li>
+<li>
+<p><strong>零元交集</strong>( <span class="math inline">\(\bigcap\)</span> )</p>
+<ul>
+<li><span class="math inline">\(V\)</span> 可被记作 <span class="math inline">\(\bigcap A\)</span> 或 <span class="math inline">\(\bigcap \{X: X\in A\}\)</span> 或 <span class="math inline">\(\bigcap_{X\in A} X\)</span> .</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="习题-exercise">习题 Exercise</h2>
+<ol>
+<li>证明 <span class="math inline">\((A\cap B)\cup C=A\cap(B\cup C)\Leftrightarrow C\subset A\)</span> .</li>
+</ol>
+<p><span class="math display">\[\begin{aligned}
+\mathbf{i.} \ & (A\cap B)\cup C = A\cap(B\cup C) \Rightarrow C \subset A\\
+& \because C \subset (A\cap B)\cup C = A\cap(B\cup C) \subset A \\
+& \therefore C \subset A\\
+\mathbf{ii.} \ & (A\cap B)\cup C = A\cap(B\cup C) \Leftarrow C \subset A\\
+& \because C\subset A \Leftrightarrow A\cup C = A\\
+& \therefore(A\cap B)\cup C = (A\cup C)\cap(B\cup C) = A\cap(B\cup C)\\\\
+& \mathrm{Q.E.D} \\
+\end{aligned}
+\]</span></p>
+<hr>
+<h2 id="参考-reference">参考 Reference</h2>
+<p><a href="https://en.wikipedia.org/wiki/Axiom_of_union">1</a> <a href="https://en.wikipedia.org/wiki/Axiom_of_union">https://en.wikipedia.org/wiki/Axiom_of_union</a></p>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">yscale</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2018-08-05
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/naive-set-theory/">Naive Set Theory</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/nst-section-five/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">[Naive Set Theory] Section 5 Complements and Powers</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/nst-section-three/">
+            <span class="next-text nav-default">[Naive Set Theory] Section 3 Unordered Pairs</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:yscysc01@hotmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/siger-young" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.zhihu.com/people/yscale" class="iconfont icon-zhihu" title="zhihu"></a>
+  <a href="https://ml.yscale.cf/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">yscale</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+
+
+  <script type="text/javascript">
+    window.MathJax = {
+		  tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']],
+          processEscapes: true,
+          processEnvironments: true,
+        autoload: {
+            color: [],
+            colorV2: ['color']
+          },
+          packages: {'[+]': ['noerrors']}
+      },
+      loader: {
+		  	load: ['input/asciimath', '[tex]/noerrors']
+      }
+    };
+  </script>
+  <script async src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.0.5/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

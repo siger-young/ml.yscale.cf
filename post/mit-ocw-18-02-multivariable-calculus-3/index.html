@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>[MIT OCW] 18.02 Multivariable Calculus - 3 笔记 - yscale - anything about ML</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="yscale" /><meta name="description" content="MIT OCW 18.02 Multivariable Calculus" /><meta name="keywords" content="yscale" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.72.0-DEV with theme even" />
+
+
+<link rel="canonical" href="https://ml.yscale.cf/post/mit-ocw-18-02-multivariable-calculus-3/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.69f09e7d7e0cd7f81eacea88ee9f3e00c98777bfa20062e4ceb789f830acf508.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="[MIT OCW] 18.02 Multivariable Calculus - 3 笔记" />
+<meta property="og:description" content="MIT OCW 18.02 Multivariable Calculus" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ml.yscale.cf/post/mit-ocw-18-02-multivariable-calculus-3/" />
+<meta property="article:published_time" content="2019-07-28T17:13:00+00:00" />
+<meta property="article:modified_time" content="2019-07-28T17:13:00+00:00" />
+<meta itemprop="name" content="[MIT OCW] 18.02 Multivariable Calculus - 3 笔记">
+<meta itemprop="description" content="MIT OCW 18.02 Multivariable Calculus">
+<meta itemprop="datePublished" content="2019-07-28T17:13:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-07-28T17:13:00&#43;00:00" />
+<meta itemprop="wordCount" content="543">
+
+
+
+<meta itemprop="keywords" content="MIT 18.02," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[MIT OCW] 18.02 Multivariable Calculus - 3 笔记"/>
+<meta name="twitter:description" content="MIT OCW 18.02 Multivariable Calculus"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">yscale</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">yscale</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">[MIT OCW] 18.02 Multivariable Calculus - 3 笔记</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-07-28 </span>
+        <div class="post-category">
+            <a href="/categories/mooc-notes/"> mooc-notes </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#mit-ocw-1802-multivariable-calculus">MIT OCW 18.02 Multivariable Calculus</a>
+      <ul>
+        <li><a href="#matrices">Matrices</a>
+          <ul>
+            <li><a href="#linear-transformation">Linear Transformation</a></li>
+            <li><a href="#minor-and-cofactor">Minor and Cofactor</a></li>
+            <li><a href="#transpose">Transpose</a></li>
+            <li><a href="#adjugate">Adjugate</a></li>
+            <li><a href="#inverse">Inverse</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="mit-ocw-1802-multivariable-calculus">MIT OCW 18.02 Multivariable Calculus</h1>
+<h2 id="matrices">Matrices</h2>
+<h3 id="linear-transformation">Linear Transformation</h3>
+<p>If we want apply some operation on a vector <span class="math inline">\(\mathbf{x}=(x_1,x_2)\)</span> to change it into <span class="math inline">\(\mathbf{x'}=(-x_2,x_1)\)</span> , the process can be described as a matrix.
+Given a vector <span class="math inline">\(\mathbf{x}=\begin{bmatrix}x_1\\x_2\end{bmatrix}\)</span> and a matrix <span class="math inline">\(\mathbf{R}=\begin{bmatrix}0 & -1 \\ 1 & 0\end{bmatrix}\)</span> , a new vector will be generated after we apply the matrix <span class="math inline">\(\mathbf{R}\)</span> to <span class="math inline">\(\mathbf{x}\)</span> that is</p>
+<p><span class="math display">\[\mathbf{R}\mathbf{x}=\begin{bmatrix}0 & -1 \\ 1 & 0\end{bmatrix}\begin{bmatrix}x_1\\x_2\end{bmatrix}=\begin{bmatrix}-x_2\\x_1\end{bmatrix}.
+\]</span></p>
+<p>A more concrete example is that if we know how the target vector <span class="math inline">\(\mathbf{u}=\begin{bmatrix}u_1\\u_2\\u_3\end{bmatrix}\)</span> is derived from <span class="math inline">\(\mathbf{x}=\begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix}\)</span>, for instance</p>
+<p><span class="math display">\[\left\{\begin{aligned}u_1&=2x_1+3x_2+3x_3\\u_2&=2x_1+4x_2+5x_3\\u_3&=x_1+x_2+2x_3\end{aligned}\right.,
+\]</span></p>
+<p>then we can intermediately write such operation as a matrix that is</p>
+<p><span class="math display">\[\mathbf{A}=\begin{bmatrix}2&3&3\\2&4&5\\1&1&2\end{bmatrix}.
+\]</span></p>
+<p>We now have the following equation</p>
+<p><span class="math display">\[\mathbf{A}\mathbf{x}=\mathbf{u}.
+\]</span></p>
+<h3 id="minor-and-cofactor">Minor and Cofactor</h3>
+<p>For a matrix <span class="math inline">\(\mathbf{A}\)</span> , delete the row and the column where a specific element <span class="math inline">\(a_{ij}\)</span> exactly lies, and we get a smaller matrix. Treat it as a determinant, and that&rsquo;s called the <strong>minor</strong> of <span class="math inline">\(a_{ij}\)</span> .
+The <strong>cofactor</strong> is almost the same as the minor, but have something to do with signs, which means that for the element <span class="math inline">\(a_{ij}\)</span> , we get the cofactor of it by multiplying <span class="math inline">\((-1)^{i+j}\)</span> before the minor.
+Write the cofactor of some element <span class="math inline">\(a_{ij}\)</span> as <span class="math inline">\(A_{ij}\)</span> , and compose a new matrix</p>
+<p><span class="math display">\[\mathbf{C}=\begin{bmatrix} A_{11} & A_{12} & A_{13} & \cdots \\ A_{21} & A_{22} & A_{23} & \cdots \\ A_{31} & A_{32} & A_{33} & \cdots \\ \vdots & \cdots & \cdots & \cdots \end{bmatrix},
+\]</span></p>
+<p>which is called the <strong>cofactor matrix</strong>, namely <strong>comatrix</strong>.</p>
+<h3 id="transpose">Transpose</h3>
+<p>For a matrix <span class="math inline">\(\mathbf{A}\)</span> , the <strong>transpose matrix</strong> of it <span class="math inline">\(\mathbf{A}^{\mathsf{T}}\)</span> is derived from <span class="math inline">\(\mathbf{A}\)</span> where one&rsquo;s rows are the other&rsquo;s columns in the same order, vice versa.
+Concretely, take <span class="math inline">\(\mathbf{A}=\begin{bmatrix} 1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9 \end{bmatrix}\)</span> as an example, the tranpose matrix <span class="math inline">\(\mathbf{A}^{\mathsf{T}}=\begin{bmatrix} 1 & 4 & 7 \\ 2 & 5 & 8 \\ 3 & 6 & 9 \end{bmatrix}\)</span> .</p>
+<h3 id="adjugate">Adjugate</h3>
+<p>For a matrix <span class="math inline">\(\mathbf{A}\)</span> , the <strong>adjugate matrix</strong> of it <span class="math inline">\(\operatorname{adj}(\mathbf{a})=\mathbf{C}^{\mathsf{T}}\)</span> , where <span class="math inline">\(\mathbf{C}\)</span> is the comatrix.</p>
+<h3 id="inverse">Inverse</h3>
+<p>The <strong>inverse</strong> of a matrix <span class="math inline">\(\mathbf{A}\)</span> with the notation <span class="math inline">\(\mathbf{A}^{-1}\)</span> fulfills `</p>
+<p><span class="math display">\[\mathbf{A}\mathbf{A}^{-1}=\mathbf{I},\mathbf{A}^{-1}\mathbf{A}=\mathbf{I},
+\]</span></p>
+<p>` where <span class="math inline">\(\mathbf{I}\)</span> is an identity matrix.
+For an equation <span class="math inline">\(\mathbf{A}\mathbf{X}=\mathbf{B}\)</span> , if we want to solve <span class="math inline">\(\mathbf{X}\)</span> , we just apply <span class="math inline">\(\mathbf{A}^{-1}\)</span> to the both sides thus get</p>
+<p><span class="math display">\[\mathbf{A}^{-1}(\mathbf{A}\mathbf{X})=\mathbf{A}^{-1}\mathbf{B},
+\]</span></p>
+<p>namely <span class="math inline">\(\mathbf{X}=\mathbf{A}^{-1}\mathbf{B}\)</span> .
+To calculate the inverse of a matrix <span class="math inline">\(A\)</span> , we need to know the adjugate matrix <span class="math inline">\(\operatorname{adj}(\mathbf{A})\)</span> and the determinant of <span class="math inline">\(\mathbf{A}\)</span> to in the following formula</p>
+<p><span class="math display">\[\mathbf{A}^{-1}=\frac{\operatorname{adj}(\mathbf{A})}{\det(\mathbf{A})}.
+\]</span></p>
+<p><strong>e.g.</strong> Calculate the inverse of <span class="math inline">\(\mathbf{A}=\begin{bmatrix}2&3&3\\2&4&5\\1&1&2\end{bmatrix}\)</span> .</p>
+<p><strong>Solution</strong>
+First, we calculate the comatrix</p>
+<p><span class="math display">\[\mathbf{C}=\begin{bmatrix}
++\begin{vmatrix}4&5\\1&2\end{vmatrix}&
+-\begin{vmatrix}2&5\\1&2\end{vmatrix}&
++\begin{vmatrix}2&4\\1&1\end{vmatrix}\\
+-\begin{vmatrix}3&3\\1&2\end{vmatrix}&
++\begin{vmatrix}2&3\\1&2\end{vmatrix}&
+-\begin{vmatrix}2&3\\1&1\end{vmatrix}\\
++\begin{vmatrix}3&3\\4&5\end{vmatrix}&
+-\begin{vmatrix}2&3\\2&5\end{vmatrix}&
++\begin{vmatrix}2&3\\2&4\end{vmatrix}
+\end{bmatrix}=\begin{bmatrix}
++3 & -(-1) & +(-2)\\
+-3 & +1 & -(-1)\\
++3 & -4 & +(-2)
+\end{bmatrix}=\begin{bmatrix}
+3 & 1 & -2\\
+-3 & 1 & 1\\
+3 & -4 & 2
+\end{bmatrix},
+\]</span></p>
+<p>and tranpose it</p>
+<p><span class="math display">\[\mathbf{C}^{\mathsf{T}}=\begin{bmatrix}
+3 & -3 & 3\\
+1 & 1 & -4\\
+-2 & 1 & 2
+\end{bmatrix}.
+\]</span></p>
+<p>Easy to get <span class="math inline">\(\det(\mathbf{A})=3\)</span> , therefore the inverse can be calculated</p>
+<p><span class="math display">\[\mathbf{A}^{-1}=\frac13\begin{bmatrix}
+3 & -3 & 3\\
+1 & 1 & -4\\
+-2 & 1 & 2
+\end{bmatrix}=\begin{bmatrix}
+1 & -1 & 1\\
+\frac13 & \frac13 & -\frac43\\
+-\frac23 & \frac13 & \frac23
+\end{bmatrix}.
+\]</span></p>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">yscale</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2019-07-28
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/mit-18.02/">MIT 18.02</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/mit-ocw-18-02-multivariable-calculus-4/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">[MIT OCW] 18.02 Multivariable Calculus - 4 笔记</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/mit-ocw-18-02-multivariable-calculus-1-2/">
+            <span class="next-text nav-default">[MIT OCW] 18.02 Multivariable Calculus - 1, 2 笔记</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:yscysc01@hotmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/siger-young" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.zhihu.com/people/yscale" class="iconfont icon-zhihu" title="zhihu"></a>
+  <a href="https://ml.yscale.cf/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">yscale</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+
+
+  <script type="text/javascript">
+    window.MathJax = {
+		  tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']],
+          processEscapes: true,
+          processEnvironments: true,
+        autoload: {
+            color: [],
+            colorV2: ['color']
+          },
+          packages: {'[+]': ['noerrors']}
+      },
+      loader: {
+		  	load: ['input/asciimath', '[tex]/noerrors']
+      }
+    };
+  </script>
+  <script async src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.0.5/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

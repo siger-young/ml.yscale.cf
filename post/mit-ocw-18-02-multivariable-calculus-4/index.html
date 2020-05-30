@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>[MIT OCW] 18.02 Multivariable Calculus - 4 笔记 - yscale - anything about ML</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="yscale" /><meta name="description" content="MIT OCW 18.02 Multivariable Calculus" /><meta name="keywords" content="yscale" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.72.0-DEV with theme even" />
+
+
+<link rel="canonical" href="https://ml.yscale.cf/post/mit-ocw-18-02-multivariable-calculus-4/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.69f09e7d7e0cd7f81eacea88ee9f3e00c98777bfa20062e4ceb789f830acf508.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="[MIT OCW] 18.02 Multivariable Calculus - 4 笔记" />
+<meta property="og:description" content="MIT OCW 18.02 Multivariable Calculus" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ml.yscale.cf/post/mit-ocw-18-02-multivariable-calculus-4/" />
+<meta property="article:published_time" content="2019-07-29T14:46:00+00:00" />
+<meta property="article:modified_time" content="2019-07-29T14:46:00+00:00" />
+<meta itemprop="name" content="[MIT OCW] 18.02 Multivariable Calculus - 4 笔记">
+<meta itemprop="description" content="MIT OCW 18.02 Multivariable Calculus">
+<meta itemprop="datePublished" content="2019-07-29T14:46:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-07-29T14:46:00&#43;00:00" />
+<meta itemprop="wordCount" content="677">
+
+
+
+<meta itemprop="keywords" content="MIT 18.02," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[MIT OCW] 18.02 Multivariable Calculus - 4 笔记"/>
+<meta name="twitter:description" content="MIT OCW 18.02 Multivariable Calculus"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">yscale</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">yscale</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">[MIT OCW] 18.02 Multivariable Calculus - 4 笔记</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-07-29 </span>
+        <div class="post-category">
+            <a href="/categories/mooc-notes/"> mooc-notes </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#mit-ocw-1802-multivariable-calculus">MIT OCW 18.02 Multivariable Calculus</a>
+      <ul>
+        <li><a href="#equations-of-planes">Equations of Planes</a>
+          <ul>
+            <li><a href="#expression">Expression</a></li>
+            <li><a href="#position">Position</a></li>
+          </ul>
+        </li>
+        <li><a href="#linear-systems">Linear Systems</a>
+          <ul>
+            <li><a href="#invertible-matrices">Invertible Matrices</a></li>
+            <li><a href="#homogeneous-systems">Homogeneous Systems</a></li>
+            <li><a href="#general-cases">General Cases</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="mit-ocw-1802-multivariable-calculus">MIT OCW 18.02 Multivariable Calculus</h1>
+<h2 id="equations-of-planes">Equations of Planes</h2>
+<h3 id="expression">Expression</h3>
+<p>The equation of a plane should be in the form of <span class="math inline">\(ax+by+cz=d\)</span> .</p>
+<p><strong>e.g.</strong> Plane through origin with normal vector <span class="math inline">\(\mathbf{N}=(1,5,10)\)</span> .</p>
+<p><strong>Solution</strong> Select a point <span class="math inline">\(P(x,y,z)\)</span> on the plane and we have <span class="math inline">\(\mathbf{OP}\cdot\mathbf{N}=0\)</span> , that is <span class="math inline">\(x+5y+10z=0\)</span> .</p>
+<p><strong>e.g.</strong> Plane through <span class="math inline">\(P_0(2,1,-1)\)</span> with normal vector <span class="math inline">\(\mathbf{N}=(1,5,10)\)</span> .
+It&rsquo;s slightly different but what we will do is almost the same. Select a point <span class="math inline">\(P(x,y,z)\)</span> on the plane and we have <span class="math inline">\(\mathbf{P_0P}\cdot\mathbf{N}=0\)</span> , that is <span class="math inline">\((x-2)+5(y-1)+10(z+1)=0\)</span> , simplified as <span class="math inline">\(x+5y+10z=-3\)</span> .</p>
+<p>Observe these two examples, their coefficients before <span class="math inline">\(x,y,z\)</span> are exactly the components of the normal vector <span class="math inline">\(\mathbf{N}\)</span> , the only difference is just the constant. Here the constant can be understood as some offset to origin, since there is no offset when the constant is <span class="math inline">\(0\)</span> , namely through the origin.</p>
+<p>After we know the fact, we can solve the second example in an easier way. Because we&rsquo;ve known the form in the second example is <span class="math inline">\(x+5y+10z=d\)</span> , we just plug <span class="math inline">\(P_0(2,1-1)\)</span> into it and solve the value of <span class="math inline">\(d\)</span> , finally we get the whole equation.</p>
+<h3 id="position">Position</h3>
+<p>If we know a vector and the equation of a plane, we can judge their relationship by the above trick.</p>
+<p><strong>e.g.</strong> Given a vector <span class="math inline">\(\mathbf{v}=(1,2,-1)\)</span> and a plane <span class="math inline">\(x+y+3z=5\)</span> , what&rsquo;s their relationship? Parallel / Perpendicular / Neither.</p>
+<p><strong>Solution</strong> The normal vector of the plane is <span class="math inline">\(\mathbf{N}=(1,1,3)\)</span> , and we find that <span class="math inline">\(\mathbf{N}\cdot\mathbf{v}=0\)</span> . Caution! It DOES NOT mean <span class="math inline">\(\mathbf{v}\)</span> is perpendicular to the plane, instead, what we check is <span class="math inline">\(\mathbf{v}\)</span> and the <em>normal</em> vector <span class="math inline">\(\mathbf{N}\)</span> of the plane. Therefore, it oppositely suggests that the vector <span class="math inline">\(\mathbf{v}\)</span> is parallel to the plane.</p>
+<h2 id="linear-systems">Linear Systems</h2>
+<p>Think about a <span class="math inline">\(3\times 3\)</span> linear system, for example,</p>
+<p><span class="math display">\[\left\{\begin{alignedat}{4} x & {}+{} &  & {}{} & z & {}={} & 1 \\
+ x & {}+{} &  y & {} {} &  & {}={} &  2 \\
+ x & {}+{} & 2y & {}+{} & 3z & {}={} & 3\end{alignedat}\right..
+\]</span></p>
+<p>These three equations are all planes, and what&rsquo;s the meaning of a solution?
+In geometry, we can only find only one solution when the first two planes intersect in a line, and the line intersects with the third plane with a point. To solve this, a good way is to use matrix, a.k.a. <span class="math inline">\(\mathbf{A}\mathbf{X}=\mathbf{B}\Leftrightarrow\mathbf{X}=\mathbf{A}^{-1}\mathbf{B}\)</span> .
+Anyhow, there exists some weird situtations and the method doesn&rsquo;t work. Generally, the solution of the system have four possibilities:</p>
+<ul>
+<li>No solutions</li>
+<li>One point (unique solution)</li>
+<li>A line (infinite solutions)</li>
+<li>A plane (infinite solutions)</li>
+</ul>
+<p>If two planes are parallel, then there exists no solutions at all.
+If three planes are all the same, then there exists infinite solutions, namely a plane.
+If two planes intersect in a line, and the thrid plane is parallel to the line (not contained), then there exists no solutions.
+If two planes intersect in a line, and the thrid plane is contain the line, then there exists infinite solutions, namely a line.</p>
+<h3 id="invertible-matrices">Invertible Matrices</h3>
+<p>What&rsquo;s above method going wrong in algebra? The formula <span class="math inline">\(\mathbf{A}^{-1}=\frac{\operatorname{adj}(\mathbf{A})}{\det(\mathbf{A})}\)</span> is definitely correct, but what will happen if <span class="math inline">\(\det(\mathbf{A})=0\)</span> ? We say that those matrices whose determinant <span class="math inline">\(\det(\mathbf{A})\neq 0\)</span> are invertible and they have inverse, the others are not invertible and don&rsquo;t have inverse.</p>
+<h3 id="homogeneous-systems">Homogeneous Systems</h3>
+<p>A homogeneous system has the form <span class="math inline">\(\mathbf{A}\mathbf{X}=0\)</span> ，we can find that no matter what <span class="math inline">\(\mathbf{A}\)</span> is, obviously <span class="math inline">\(\mathbf{X}=0\)</span> is always a solution, which is called a trivial solution.
+If <span class="math inline">\(\det(\mathbf{A})\neq 0\)</span> , <span class="math inline">\(\mathbf{X}=0\)</span> is the unique solution.
+If <span class="math inline">\(\det(\mathbf{A})=0\)</span> , then <span class="math inline">\(\det(\mathbf{N_1},\mathbf{N_2},\mathbf{N_3})=0\)</span> , which means their normal vectors are coplanar. Then there exists nontrivial solutions like <span class="math inline">\(\mathbf{X}=\mathbf{N_1}\times\mathbf{N_2}\)</span> .</p>
+<h3 id="general-cases">General Cases</h3>
+<p>For a system <span class="math inline">\(\mathbf{A}\mathbf{X}=\mathbf{B}\)</span></p>
+<ul>
+<li>if <span class="math inline">\(\det(\mathbf{A})\neq 0\)</span> , then it has unique solution</li>
+<li>if <span class="math inline">\(\det(\mathbf{A})=0\)</span> , then it has either no solutions or infinite solutions.</li>
+</ul>
+<p>The more details will be found when trying to solve the system by elimination and substitution, but if we know <span class="math inline">\(\det(\mathbf{A})=0\)</span> and find a solution, then it has to have infinite solutions; and when we get something contradictory, then it turns out that the system has no solutions.</p>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">yscale</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2019-07-29
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/mit-18.02/">MIT 18.02</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/mit-ocw-18-02-multivariable-calculus-5/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">[MIT OCW] 18.02 Multivariable Calculus - 5 笔记</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/mit-ocw-18-02-multivariable-calculus-3/">
+            <span class="next-text nav-default">[MIT OCW] 18.02 Multivariable Calculus - 3 笔记</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:yscysc01@hotmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/siger-young" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.zhihu.com/people/yscale" class="iconfont icon-zhihu" title="zhihu"></a>
+  <a href="https://ml.yscale.cf/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">yscale</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+
+
+  <script type="text/javascript">
+    window.MathJax = {
+		  tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']],
+          processEscapes: true,
+          processEnvironments: true,
+        autoload: {
+            color: [],
+            colorV2: ['color']
+          },
+          packages: {'[+]': ['noerrors']}
+      },
+      loader: {
+		  	load: ['input/asciimath', '[tex]/noerrors']
+      }
+    };
+  </script>
+  <script async src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.0.5/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

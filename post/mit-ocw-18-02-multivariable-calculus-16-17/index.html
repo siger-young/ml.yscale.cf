@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>[MIT OCW] 18.02 Multivariable Calculus - 16, 17 笔记 - yscale - anything about ML</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="yscale" /><meta name="description" content="MIT OCW 18.02 Multivariable Calculus" /><meta name="keywords" content="yscale" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.72.0-DEV with theme even" />
+
+
+<link rel="canonical" href="https://ml.yscale.cf/post/mit-ocw-18-02-multivariable-calculus-16-17/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.69f09e7d7e0cd7f81eacea88ee9f3e00c98777bfa20062e4ceb789f830acf508.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="[MIT OCW] 18.02 Multivariable Calculus - 16, 17 笔记" />
+<meta property="og:description" content="MIT OCW 18.02 Multivariable Calculus" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ml.yscale.cf/post/mit-ocw-18-02-multivariable-calculus-16-17/" />
+<meta property="article:published_time" content="2019-08-15T08:41:00+00:00" />
+<meta property="article:modified_time" content="2019-08-15T08:41:00+00:00" />
+<meta itemprop="name" content="[MIT OCW] 18.02 Multivariable Calculus - 16, 17 笔记">
+<meta itemprop="description" content="MIT OCW 18.02 Multivariable Calculus">
+<meta itemprop="datePublished" content="2019-08-15T08:41:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-08-15T08:41:00&#43;00:00" />
+<meta itemprop="wordCount" content="650">
+
+
+
+<meta itemprop="keywords" content="MIT 18.02," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[MIT OCW] 18.02 Multivariable Calculus - 16, 17 笔记"/>
+<meta name="twitter:description" content="MIT OCW 18.02 Multivariable Calculus"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">yscale</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">yscale</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">[MIT OCW] 18.02 Multivariable Calculus - 16, 17 笔记</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-08-15 </span>
+        <div class="post-category">
+            <a href="/categories/mooc-notes/"> mooc-notes </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#mit-ocw-1802-multivariable-calculus">MIT OCW 18.02 Multivariable Calculus</a>
+      <ul>
+        <li><a href="#double-integrals">Double Integrals</a>
+          <ul>
+            <li><a href="#geometry-and-definition">Geometry and Definition</a></li>
+            <li><a href="#convertion-to-double-integral">Convertion to Double &ldquo;Integral&rdquo;</a></li>
+            <li><a href="#swap-orders">Swap Orders</a></li>
+            <li><a href="#polar-coordinates">Polar Coordinates</a></li>
+            <li><a href="#application">Application</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="mit-ocw-1802-multivariable-calculus">MIT OCW 18.02 Multivariable Calculus</h1>
+<h2 id="double-integrals">Double Integrals</h2>
+<h3 id="geometry-and-definition">Geometry and Definition</h3>
+<p>Like a regular integral, the double integral <span class="math inline">\(\iint_{R}f(x,y)\mathrm{d}A\)</span> represents the volume under the surface on the region <span class="math inline">\(R\)</span> where <span class="math inline">\(\mathrm{d}A\)</span> is a small piece of the region.
+So we can have a summation like the following</p>
+<p><span class="math display">\[\iint_{R}f(x,y)\mathrm{d}A=\lim_{\Delta A_i\to 0}\sum f(x,y)\Delta A_i.
+\]</span></p>
+<h3 id="convertion-to-double-integral">Convertion to Double &ldquo;Integral&rdquo;</h3>
+<p>In pratice, we will not calculate double integral by definition, and now we try to convert it to two single integrals.
+The idea is to divide the volume into several slices along <span class="math inline">\(x\)</span> direction, and the volume of these slices are changing with <span class="math inline">\(x\)</span> , so the slice determined by <span class="math inline">\(x\)</span> should be</p>
+<p><span class="math display">\[S(x)=\int_{y_{\min}(x)}^{y_{\max}(x)}f(x,y)\mathrm{d}y
+\]</span></p>
+<p>, and now we activate <span class="math inline">\(x\)</span> , so the double integral becomes</p>
+<p><span class="math display">\[\begin{aligned}\iint_{R}f(x,y)\mathrm{d}A&=\int_{x_{\min}}^{x_{\max}}S(x)\mathrm{d}x\\&=\int_{x_{\min}}^{x_{\max}}\int_{y_{\min}(x)}^{y_{\max}(x)}f(x,y)\mathrm{d}y\mathrm{d}x.\end{aligned}
+\]</span></p>
+<p><strong>e.g.</strong> Calculate the integral of <span class="math inline">\(z=1-x^2-y^2\)</span> on the region <span class="math inline">\(0\leq x\leq 1,0\leq y\leq 1\)</span> .</p>
+<p><strong>Solution</strong></p>
+<p><span class="math display">\[\begin{aligned}\iint_{R}1-x^2-y^2\mathrm{d}y\mathrm{d}x&=\int_0^1\int_0^1 1-x^2-y^2\mathrm{d}y\mathrm{d}x\\&=\int_0^1\left[y-x^2y-\frac13y^3\right]^1_0\mathrm{d}x\\&=\int_0^1\frac23-x^2\mathrm{d}x\\&=\left[\frac23x-\frac13x^3\right]^1_0\\&=\frac13.\end{aligned}
+\]</span></p>
+<p><strong>e.g.</strong> Calculate the volume of <span class="math inline">\(z=1-x^2-y^2\)</span> above the <span class="math inline">\(xy\)</span> plane.</p>
+<p><strong>Solution</strong> Here the region is actually <span class="math inline">\(x^2+y^2\leq 1\)</span> , and according to symmetric graph, we only need to calculate the quarter of the region and multiply <span class="math inline">\(4\)</span> .</p>
+<p><span class="math display">\[\begin{aligned}\iint_{R}1-x^2-y^2\mathrm{d}y\mathrm{d}x&=4\int_0^1\int_0^{\sqrt{1-x^2}} 1-x^2-y^2\mathrm{d}y\mathrm{d}x\\&=4\int_0^1\left[y-x^2y-\frac13y^3\right]^{\sqrt{1-x^2}}_0\mathrm{d}x\\&=4\int_0^1(1-x^2)\sqrt{1-x^2}-\frac13(1-x^2)\sqrt{1-x^2}\mathrm{d}x\\&=4\int_0^1\frac23(1-x^2)\sqrt{1-x^2}\mathrm{d}x\\(x=\sin(\theta))&=\frac83\int_{\frac\pi2}^0\cos^4(\theta)\mathrm{d}\theta\\&=\frac\pi2.\end{aligned}
+\]</span></p>
+<h3 id="swap-orders">Swap Orders</h3>
+<p>Last time we converted the volume into slices along <span class="math inline">\(x\)</span> direction, why not the other direction? Actually, it&rsquo;s feasible. And in theory, these two directions both work. The form along the other direction can be written as</p>
+<p><span class="math display">\[\begin{aligned}\iint_{R}f(x,y)\mathrm{d}A&=\int_{y_{\min}}^{y_{\max}}T(x)\mathrm{d}x\\&=\int_{y_{\min}}^{y_{\max}}\int_{x_{\min}(y)}^{x_{\max}(y)}f(x,y)\mathrm{d}x\mathrm{d}y.\end{aligned}
+\]</span></p>
+<p><strong>e.g.</strong> Evaluate <span class="math inline">\(\int_0^1\int_{x}^{\sqrt{x}}\frac{e^y}{y}\mathrm{d}y\mathrm{d}x\)</span> .</p>
+<p><strong>Solution</strong> The region to be integrated is like the following.
+<img src="/old/uploads/2019/08/858055316.png" alt="swap-region.png">
+Here the expression is to make <span class="math inline">\(y\)</span> dependent on <span class="math inline">\(x\)</span> , and now we swap the order and make <span class="math inline">\(x\)</span> dependent on <span class="math inline">\(y\)</span> that is</p>
+<p><span class="math display">\[\begin{aligned}\int_0^1\int_{x}^{\sqrt{x}}\frac{e^y}{y}\mathrm{d}y\mathrm{d}x&=\int_0^1\int_{y^2}^{y}\frac{e^y}{y}\mathrm{d}x\mathrm{d}y\\&=\int_0^1\left[\frac{e^y}{y}x\right]^{y}_{y^2}\mathrm{d}y\\&=\int_0^1 e^y(1-y)\mathrm{d}y\\&=\left[2e^y-ye^y\right]^1_0\\&=e-2.\end{aligned}
+\]</span></p>
+<h3 id="polar-coordinates">Polar Coordinates</h3>
+<p>In fact, sometimes it becomes easier when dealing the same problem in polar coordinates. The idea is to express <span class="math inline">\(\mathrm{d}A\)</span> in polar coordinates like the following picture.
+<img src="/old/uploads/2019/08/921293434.png" alt="polar-infinitesimal.png">
+From the picture, it can be seen that the small piece of region becomes</p>
+<p><span class="math display">\[\mathrm{d}A=r\mathrm{d}r\mathrm{d}\theta.
+\]</span></p>
+<p><strong>e.g.</strong> Calculate the volume of <span class="math inline">\(z=1-x^2-y^2\)</span> above the <span class="math inline">\(xy\)</span> plane.</p>
+<p><strong>Solution</strong> The expression can be converted to <span class="math inline">\(z=1-r^2\)</span> and the region becomes <span class="math inline">\(R:r\leq 1\)</span> , so the integral becomes</p>
+<p><span class="math display">\[\begin{aligned}\iint_{R}1-r^2\mathrm{d}A&=\int_0^{2\pi}\int_0^1(1-r^2)r\mathrm{d}r\mathrm{d}\theta\\&=\int_0^{2\pi}\left[\frac{r^2}{2}-\frac{r^4}{4}\right]^1_0\mathrm{d}\theta\\&=\int_0^{2\pi}\frac14\mathrm{d}\theta\\&=\left[\frac14\theta\right]^{2\pi}_0\\&=\frac\pi2.\end{aligned}
+\]</span></p>
+<h3 id="application">Application</h3>
+<ul>
+<li>Get the area of a region on the plane
+Given a region <span class="math inline">\(R\)</span> on the plane, we&rsquo;d like to get its area. It&rsquo;s equivalent to evaluate <span class="math inline">\(\iint_{R}\mathrm{d}A\)</span> , where <span class="math inline">\(\mathrm{d}A\)</span> depends on the type.</li>
+</ul>
+<p><strong>Variant</strong> Get the total mass of a flat object with the density <span class="math inline">\(\delta\)</span> function: <span class="math inline">\(\iint_{r}\delta\mathrm{d}A\)</span> .</p>
+<ul>
+<li>Average
+Like the single integral, an average of the function <span class="math inline">\(f\)</span> on a region <span class="math inline">\(R\)</span> can be defined as</li>
+</ul>
+<p><span class="math display">\[\bar{f}=\frac1{S_R}\iint_{R}f\mathrm{d}A,
+\]</span></p>
+<p>where <span class="math inline">\(S_R\)</span> is the area of the region <span class="math inline">\(R\)</span> .</p>
+<p><strong>Variant</strong> Weighted average:</p>
+<p><span class="math display">\[\tilde{f}=\frac1{M_R}\iint_{R}f\cdot\delta\mathrm{d}A,
+\]</span></p>
+<p>where <span class="math inline">\(M_R=\iint_{R}\delta\mathrm{d}A\)</span> .</p>
+<p><strong>Variant</strong> Center of mass of a flat object (in Cartesian plane):</p>
+<p><span class="math display">\[\bar{x}=\frac1{M_R}\iint_{R}x\cdot\delta\mathrm{d}A,\bar{y}=\frac1{M_R}\iint_{R}y\cdot\delta\mathrm{d}A,
+\]</span></p>
+<p>where <span class="math inline">\(M_R=\iint_{R}\delta\mathrm{d}A\)</span> .</p>
+<ul>
+<li>Moment of inertia
+Given a point-like mass, the moment of inertia about some axis is defined</li>
+</ul>
+<p><span class="math display">\[I=mr^2,
+\]</span></p>
+<p>where <span class="math inline">\(m\)</span> is the mass and <span class="math inline">\(r\)</span> is the distance to the axis.</p>
+<p><em>Analogy</em> The kinetic energy is <span class="math inline">\(E_k=\frac12mv^2\)</span> , when we are push the mass, the kinetic energy will increase. So the larger <span class="math inline">\(m\)</span> is, the more difficult it will be to change the motion of the object, namely <span class="math inline">\(v\)</span> . Similarly when the mass is rotating with angular velocity <span class="math inline">\(\omega\)</span> , the velocity becomes <span class="math inline">\(v=\omega\cdot r\)</span> , where <span class="math inline">\(r\)</span> is the distance to the axis and we get <span class="math inline">\(E_k=\frac12mr^2\omega^2\)</span> , so <span class="math inline">\(I=mr^2\)</span> is also an indicator of the difficulty changing the rotation, namely <span class="math inline">\(\omega\)</span> .</p>
+<p>For a flat object, the moment of inertia becomes</p>
+<p><span class="math display">\[I=\iint_{R}r^2\cdot\delta\mathrm{d}A
+\]</span></p>
+<p>.</p>
+<p><strong>e.g.</strong> Compare the moment of inertia of a disk with radius <span class="math inline">\(a\)</span> about the center and about the point on the edge.</p>
+<p><strong>Solution</strong> When it&rsquo;s about the center, it looks like the following.
+<img src="/old/uploads/2019/08/3063181024.png" alt="moment-of-inertia-1.png">
+Assume <span class="math inline">\(\delta=1\)</span> , so just integrate it with polar way</p>
+<p><span class="math display">\[\begin{aligned}I_0&=\iint_{R}r^2\mathrm{d}A\\&=\int_0^{2\pi}\int_0^a r^3\mathrm{d}r\mathrm{d}\theta\\&=\frac\pi2a^4.\end{aligned}
+\]</span></p>
+<p>When it&rsquo;s about the edge point, we can change the origin.
+<img src="/old/uploads/2019/08/1380980742.png" alt="moment-of-inertia-2.png">
+And do the same work</p>
+<p><span class="math display">\[\begin{aligned}I_1&=\iint_{R}r^2\mathrm{d}A\\&=\int_0^{2\pi}\int_0^{2a\cos(\theta)} r^3\mathrm{d}r\mathrm{d}\theta\\&=\frac32\pi a^4.\end{aligned}
+\]</span></p>
+<p>So <span class="math inline">\(I_1=3I_0\)</span> .</p>
+<p><em>Extension</em> <a href="https://en.wikipedia.org/wiki/Parallel_axis_theorem">Parallel axis theorem</a></p>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">yscale</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2019-08-15
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/mit-18.02/">MIT 18.02</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/2013-gaokao-multiple-solutions/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">2013 年上海高考数学卷一道题的多种解法</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/mit-ocw-18-02-multivariable-calculus-14-15/">
+            <span class="next-text nav-default">[MIT OCW] 18.02 Multivariable Calculus - 14, 15 笔记</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:yscysc01@hotmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/siger-young" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.zhihu.com/people/yscale" class="iconfont icon-zhihu" title="zhihu"></a>
+  <a href="https://ml.yscale.cf/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">yscale</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+
+
+  <script type="text/javascript">
+    window.MathJax = {
+		  tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']],
+          processEscapes: true,
+          processEnvironments: true,
+        autoload: {
+            color: [],
+            colorV2: ['color']
+          },
+          packages: {'[+]': ['noerrors']}
+      },
+      loader: {
+		  	load: ['input/asciimath', '[tex]/noerrors']
+      }
+    };
+  </script>
+  <script async src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.0.5/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

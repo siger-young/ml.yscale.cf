@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>set-theory on yscale - anything about ML</title>
+    <link>https://ml.yscale.cf/categories/set-theory/</link>
+    <description>Recent content in set-theory on yscale - anything about ML</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 17 Aug 2018 03:08:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://ml.yscale.cf/categories/set-theory/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[Naïve Set Theory] Section 9 Families</title>
+      <link>https://ml.yscale.cf/post/nst-section-nine/</link>
+      <pubDate>Fri, 17 Aug 2018 03:08:00 +0000</pubDate>
+      
+      <guid>https://ml.yscale.cf/post/nst-section-nine/</guid>
+      <description>Naïve Set Theory Section 9 Families 族 这书名、章数、发布日期真的很配呢. 阐明 Exposition 族 对于集合 \(I,X\) ，如果 \(x\) 是一个从 \(I\) 到 \(X\) 的函数，称 \(x\) 是一个族，定义域 \(I\) 的一个元素被称</description>
+    </item>
+    
+    <item>
+      <title>[Naive Set Theory] Section 8 Functions</title>
+      <link>https://ml.yscale.cf/post/nst-section-eight/</link>
+      <pubDate>Wed, 15 Aug 2018 07:59:00 +0000</pubDate>
+      
+      <guid>https://ml.yscale.cf/post/nst-section-eight/</guid>
+      <description>&lt;h1 id=&#34;naive-set-theory-section-8-functions-函数&#34;&gt;&lt;em&gt;Naive Set Theory&lt;/em&gt; Section 8 Functions 函数&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Naive Set Theory] Section 7 Relations</title>
+      <link>https://ml.yscale.cf/post/nst-section-seven/</link>
+      <pubDate>Sat, 11 Aug 2018 07:08:00 +0000</pubDate>
+      
+      <guid>https://ml.yscale.cf/post/nst-section-seven/</guid>
+      <description>&lt;h1 id=&#34;naive-set-theory-section-7-relations-二元关系&#34;&gt;&lt;em&gt;Naive Set Theory&lt;/em&gt; Section 7 Relations （二元）关系&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Naive Set Theory] Section 6 Ordered Pairs</title>
+      <link>https://ml.yscale.cf/post/nst-section-six/</link>
+      <pubDate>Fri, 10 Aug 2018 11:46:00 +0000</pubDate>
+      
+      <guid>https://ml.yscale.cf/post/nst-section-six/</guid>
+      <description>&lt;h1 id=&#34;naive-set-theory-section-6-ordered-pairs-有序对&#34;&gt;&lt;em&gt;Naive Set Theory&lt;/em&gt; Section 6 Ordered Pairs 有序对&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Naive Set Theory] Section 5 Complements and Powers</title>
+      <link>https://ml.yscale.cf/post/nst-section-five/</link>
+      <pubDate>Tue, 07 Aug 2018 11:01:00 +0000</pubDate>
+      
+      <guid>https://ml.yscale.cf/post/nst-section-five/</guid>
+      <description>&lt;h1 id=&#34;naive-set-theory-section-5-complements-and-powers-补集和幂集&#34;&gt;&lt;em&gt;Naive Set Theory&lt;/em&gt; Section 5 Complements and Powers 补集和幂集&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Naive Set Theory] Section 4 Unions and Intersections</title>
+      <link>https://ml.yscale.cf/post/nst-section-four/</link>
+      <pubDate>Sun, 05 Aug 2018 04:31:00 +0000</pubDate>
+      
+      <guid>https://ml.yscale.cf/post/nst-section-four/</guid>
+      <description>&lt;h1 id=&#34;naive-set-theory-section-4-unions-and-intersections-并集交集&#34;&gt;&lt;em&gt;Naive Set Theory&lt;/em&gt; Section 4 Unions and Intersections 并集交集&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Naive Set Theory] Section 3 Unordered Pairs</title>
+      <link>https://ml.yscale.cf/post/nst-section-three/</link>
+      <pubDate>Thu, 26 Jul 2018 02:06:00 +0000</pubDate>
+      
+      <guid>https://ml.yscale.cf/post/nst-section-three/</guid>
+      <description>&lt;h1 id=&#34;naive-set-theory-section-3-unordered-pairs-配对公理&#34;&gt;&lt;em&gt;Naive Set Theory&lt;/em&gt; Section 3 Unordered Pairs 配对公理&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Naive Set Theory] Section 2 The Axiom of Specification</title>
+      <link>https://ml.yscale.cf/post/nst-section-two/</link>
+      <pubDate>Mon, 23 Jul 2018 15:22:00 +0000</pubDate>
+      
+      <guid>https://ml.yscale.cf/post/nst-section-two/</guid>
+      <description>&lt;h1 id=&#34;naive-set-theory-section-2-the-axiom-of-specification-分类公理&#34;&gt;&lt;em&gt;Naive Set Theory&lt;/em&gt; Section 2 The Axiom of Specification 分类公理&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Naive Set Theory] Section 1 The Axiom of Extension</title>
+      <link>https://ml.yscale.cf/post/nst-section-one/</link>
+      <pubDate>Sun, 22 Jul 2018 05:39:00 +0000</pubDate>
+      
+      <guid>https://ml.yscale.cf/post/nst-section-one/</guid>
+      <description>&lt;h1 id=&#34;naive-set-theory-section-1-the-axiom-of-extension-外延公理&#34;&gt;&lt;em&gt;Naive Set Theory&lt;/em&gt; Section 1 The Axiom of Extension 外延公理&lt;/h1&gt;</description>
+    </item>
+    
+    <item>
+      <title>[Naive Set Theory] 开始更新 Naive Set Theory 的读书笔记</title>
+      <link>https://ml.yscale.cf/post/nst-section-kick-start/</link>
+      <pubDate>Sat, 21 Jul 2018 23:39:00 +0000</pubDate>
+      
+      <guid>https://ml.yscale.cf/post/nst-section-kick-start/</guid>
+      <description>Naive Set Theory 是由 Paul R. Halmos 编写的集合论入门书籍，正文一共 \(102\) 页，可以比较快地阅读完，也开始更新读书笔记。该书忽略了基础公理（正则公理），虽名为“朴素”但</description>
+    </item>
+    
+  </channel>
+</rss>

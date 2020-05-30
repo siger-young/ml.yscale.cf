@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>新接触到的积分的代换 - yscale - anything about ML</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="yscale" /><meta name="description" content="许久没接触与继续学习积分的技巧了，把最近接触到的个别积分代换技巧来小结一下。
+" /><meta name="keywords" content="yscale" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.72.0-DEV with theme even" />
+
+
+<link rel="canonical" href="https://ml.yscale.cf/post/new-integral-substitution/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.69f09e7d7e0cd7f81eacea88ee9f3e00c98777bfa20062e4ceb789f830acf508.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="新接触到的积分的代换" />
+<meta property="og:description" content="许久没接触与继续学习积分的技巧了，把最近接触到的个别积分代换技巧来小结一下。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ml.yscale.cf/post/new-integral-substitution/" />
+<meta property="article:published_time" content="2018-07-19T20:24:00+00:00" />
+<meta property="article:modified_time" content="2018-07-19T20:24:00+00:00" />
+<meta itemprop="name" content="新接触到的积分的代换">
+<meta itemprop="description" content="许久没接触与继续学习积分的技巧了，把最近接触到的个别积分代换技巧来小结一下。">
+<meta itemprop="datePublished" content="2018-07-19T20:24:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-07-19T20:24:00&#43;00:00" />
+<meta itemprop="wordCount" content="355">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="新接触到的积分的代换"/>
+<meta name="twitter:description" content="许久没接触与继续学习积分的技巧了，把最近接触到的个别积分代换技巧来小结一下。"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">yscale</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">yscale</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">新接触到的积分的代换</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-07-19 </span>
+        <div class="post-category">
+            <a href="/categories/mathematics/"> mathematics </a>
+            <a href="/categories/calculus/"> calculus </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-万能公式代换">1. 万能公式代换</a></li>
+    <li><a href="#2-双曲代换也可三角代换">2. 双曲代换（也可三角代换）</a></li>
+    <li><a href="#习题">习题</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>许久没接触与继续学习积分的技巧了，把最近接触到的个别积分代换技巧来小结一下。</p>
+<h1 id="1-万能公式代换">1. 万能公式代换</h1>
+<p><span class="math display">\[I = \int{\frac{\mathrm{d}x}{(1+\cos x)^2}}
+\]</span></p>
+<p>实际上，关于 <span class="math inline">\(R(\sin x, \cos x)\mathrm{d}x\)</span> 的积分，都可令 <span class="math inline">\(t= \tan \frac{x}{2}, x \in (-\pi,\pi)\)</span> 来使其有理化。
+在本例中，我们便可由如下关系求其积分</p>
+<p><span class="math display">\[\begin{cases}\cos x &=\dfrac{1-t^2}{1+t^2} \\x &=2\arctan t\\ \mathrm{d}x &=\dfrac{2\mathrm{d}t}{1+t^2} \Leftrightarrow \mathrm{d}t=\dfrac{1}{2}\mathrm{d}x\sec^2\dfrac{x}{2}\end{cases}
+\]</span></p>
+<p><span class="math display">\[\begin{aligned}
+\therefore I & = \int{\frac{\mathrm{d}x}{(1+\cos x)^2}} \\
+& = \int{\frac{2}{(1+t^2)(1+\frac{1-t^2}{1+t^2})^2}\mathrm{d}t} \\
+& = \int{\dfrac{1+t^2}{2}\mathrm{d}t} \\
+& = \dfrac{t}{2} + \dfrac{t^3}{6} + C \\
+& = \frac{1}{2}\tan\dfrac{x}{2} +  \frac{1}{6}\tan^3\dfrac{x}{2} + C.
+\end{aligned}
+\]</span></p>
+<h1 id="2-双曲代换也可三角代换">2. 双曲代换（也可三角代换）</h1>
+<p><span class="math display">\[I = \int{\frac{x^2}{a-bx^2}\mathrm{d}x}
+\]</span></p>
+<p>二话不多说，先分离常数，转化为</p>
+<p><span class="math display">\[\begin{aligned}
+I &= \dfrac{a}{b}\int{\dfrac{\mathrm{d}x}{a-bx^2}}-\dfrac{1}{b}\int{\mathrm{d}x} \\
+&= -\dfrac{a}{b}\int{\dfrac{\mathrm{d}x}{bx^2-a}}-\dfrac{x}{b} \\
+&= -\dfrac{1}{b}\int{\dfrac{\mathrm{d}x}{\frac{b}{a} x^2-1}}-\dfrac{x}{b}.
+\end{aligned}
+\]</span></p>
+<p>令 <span class="math inline">\(\frac{\sqrt b}{\sqrt a}x=\cosh t\)</span> ，则 <span class="math inline">\(x = \frac{\sqrt a}{\sqrt b}\cosh t, \mathrm{d}x = \frac{\sqrt a}{\sqrt b}\sinh t\mathrm{d}t\)</span> 
+原式转化为</p>
+<p><span class="math display">\[\begin{aligned}I & = -\dfrac{1}{b}\int{\dfrac{\frac{\sqrt a}{\sqrt b}\sinh t}{\cosh^2 t-1}\mathrm{d}t}-\dfrac{x}{b}\\ & =  -\dfrac{\sqrt a}{b\sqrt b}\int{\dfrac{\mathrm{d}t}{\sinh t}}-\dfrac{x}{b}\end{aligned}
+\]</span></p>
+<p>已知 <span class="math inline">\(\int{\dfrac{\mathrm{d}t}{\sinh t}} = \ln\tanh\dfrac{t}{2}.\)</span> 且根据之前的代换式，我们可以知道</p>
+<p><span class="math display">\[\begin{aligned}
+\ln \tanh\dfrac{t}{2} & = \dfrac{1}{2}\ln\dfrac{\sinh^2 t}{(1+\cosh t)^2}\\
+& = \dfrac{1}{2}\ln\dfrac{\cosh^2 t - 1}{(1+\cosh t)^2} \\
+& = \frac{1}{2}\ln\dfrac{\frac{b}{a}x^2 - 1}{(1+\frac{\sqrt b}{\sqrt a}x)^2} \\
+& = \dfrac{1}{2}\ln\dfrac{(\frac{\sqrt b}{\sqrt a}x+1)(\frac{\sqrt b}{\sqrt a}x-1)}{(\frac{\sqrt b}{\sqrt a}x+1)^2} \\
+& = \dfrac{1}{2}\ln\dfrac{\frac{\sqrt b}{\sqrt a}x-1}{\frac{\sqrt b}{\sqrt a}x+1} \\
+& = -\dfrac{1}{2}\ln\dfrac{\sqrt b x+\sqrt a}{\sqrt b x-\sqrt a}.\\
+\therefore I & = \dfrac{\sqrt a}{2b\sqrt b}\ln\dfrac{\sqrt b x+\sqrt a}{\sqrt b x-\sqrt a} -\dfrac{x}{b} +C.
+\end{aligned}
+\]</span></p>
+<p>实际上，也可直接利用原先的三角代换，来达到相同的效果。</p>
+<h1 id="习题">习题</h1>
+<ol>
+<li><span class="math inline">\(\int{\dfrac{\sin^2 x \cos x}{\sin x+\cos x} \mathrm{d}x}\)</span></li>
+<li><span class="math inline">\(\int{\dfrac{\mathrm{d}x}{a+b\cos x}}\)</span></li>
+<li><span class="math inline">\(\int{\sqrt{x^2+x}\mathrm{d}x}\)</span></li>
+</ol>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">yscale</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2018-07-19
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/nst-section-kick-start/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">[Naive Set Theory] 开始更新 Naive Set Theory 的读书笔记</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/hello-latex/">
+            <span class="next-text nav-default">Hello, LaTeX!</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:yscysc01@hotmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/siger-young" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.zhihu.com/people/yscale" class="iconfont icon-zhihu" title="zhihu"></a>
+  <a href="https://ml.yscale.cf/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">yscale</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+
+
+  <script type="text/javascript">
+    window.MathJax = {
+		  tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']],
+          processEscapes: true,
+          processEnvironments: true,
+        autoload: {
+            color: [],
+            colorV2: ['color']
+          },
+          packages: {'[+]': ['noerrors']}
+      },
+      loader: {
+		  	load: ['input/asciimath', '[tex]/noerrors']
+      }
+    };
+  </script>
+  <script async src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.0.5/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

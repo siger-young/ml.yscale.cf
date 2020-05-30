@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on yscale - anything about ML</title>
+    <link>https://ml.yscale.cf/categories/</link>
+    <description>Recent content in Categories on yscale - anything about ML</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 03 Sep 2019 00:13:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://ml.yscale.cf/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>mooc-notes</title>
+      <link>https://ml.yscale.cf/categories/mooc-notes/</link>
+      <pubDate>Tue, 03 Sep 2019 00:13:00 +0000</pubDate>
+      
+      <guid>https://ml.yscale.cf/categories/mooc-notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mathematics</title>
+      <link>https://ml.yscale.cf/categories/mathematics/</link>
+      <pubDate>Sun, 18 Aug 2019 21:18:00 +0000</pubDate>
+      
+      <guid>https://ml.yscale.cf/categories/mathematics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>set-theory</title>
+      <link>https://ml.yscale.cf/categories/set-theory/</link>
+      <pubDate>Fri, 17 Aug 2018 03:08:00 +0000</pubDate>
+      
+      <guid>https://ml.yscale.cf/categories/set-theory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>calculus</title>
+      <link>https://ml.yscale.cf/categories/calculus/</link>
+      <pubDate>Thu, 19 Jul 2018 20:24:00 +0000</pubDate>
+      
+      <guid>https://ml.yscale.cf/categories/calculus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>default</title>
+      <link>https://ml.yscale.cf/categories/default/</link>
+      <pubDate>Thu, 12 Jul 2018 22:04:12 +0000</pubDate>
+      
+      <guid>https://ml.yscale.cf/categories/default/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

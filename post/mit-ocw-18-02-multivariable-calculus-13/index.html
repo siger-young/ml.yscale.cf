@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>[MIT OCW] 18.02 Multivariable Calculus - 13 笔记 - yscale - anything about ML</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="yscale" /><meta name="description" content="MIT OCW 18.02 Multivariable Calculus" /><meta name="keywords" content="yscale" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.72.0-DEV with theme even" />
+
+
+<link rel="canonical" href="https://ml.yscale.cf/post/mit-ocw-18-02-multivariable-calculus-13/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.69f09e7d7e0cd7f81eacea88ee9f3e00c98777bfa20062e4ceb789f830acf508.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="[MIT OCW] 18.02 Multivariable Calculus - 13 笔记" />
+<meta property="og:description" content="MIT OCW 18.02 Multivariable Calculus" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://ml.yscale.cf/post/mit-ocw-18-02-multivariable-calculus-13/" />
+<meta property="article:published_time" content="2019-08-07T08:55:00+00:00" />
+<meta property="article:modified_time" content="2019-08-07T08:55:00+00:00" />
+<meta itemprop="name" content="[MIT OCW] 18.02 Multivariable Calculus - 13 笔记">
+<meta itemprop="description" content="MIT OCW 18.02 Multivariable Calculus">
+<meta itemprop="datePublished" content="2019-08-07T08:55:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-08-07T08:55:00&#43;00:00" />
+<meta itemprop="wordCount" content="430">
+
+
+
+<meta itemprop="keywords" content="MIT 18.02," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[MIT OCW] 18.02 Multivariable Calculus - 13 笔记"/>
+<meta name="twitter:description" content="MIT OCW 18.02 Multivariable Calculus"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">yscale</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">yscale</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">[MIT OCW] 18.02 Multivariable Calculus - 13 笔记</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-08-07 </span>
+        <div class="post-category">
+            <a href="/categories/mooc-notes/"> mooc-notes </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#mit-ocw-1802-multivariable-calculus">MIT OCW 18.02 Multivariable Calculus</a>
+      <ul>
+        <li><a href="#lagrange-multiplier">Lagrange Multiplier</a>
+          <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#lagrange-multiplier-1">Lagrange Multiplier</a></li>
+            <li><a href="#geometry">Geometry</a></li>
+            <li><a href="#application">Application</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="mit-ocw-1802-multivariable-calculus">MIT OCW 18.02 Multivariable Calculus</h1>
+<h2 id="lagrange-multiplier">Lagrange Multiplier</h2>
+<p>We&rsquo;ve known the method to maximize or minimize a multivariable function, but what happens if there are some constraint? The critical point usually does not fulfill the constraint, so we have to maximize or minimize in another way.</p>
+<h3 id="introduction">Introduction</h3>
+<p><strong>e.g.</strong> Find the closest point to origin on <span class="math inline">\(xy=3\)</span> .</p>
+<p><strong>Idea</strong> We are going to minimize <span class="math inline">\(f(x,y)=x^2+y^2\)</span> subject to <span class="math inline">\(xy=3\)</span> . These are the level surfaces of <span class="math inline">\(f(x,y)\)</span> and <span class="math inline">\(g(x,y)=xy=3\)</span> .
+<img src="/old/uploads/2019/08/4033661633.png" alt="multiplier-1.png">
+When the level surface <span class="math inline">\(f(x,y)=c\)</span> becomes smaller and smaller, until it has no intersection with the <span class="math inline">\(xy=3\)</span> , then we have almost achieved the goal. We can find that at the maximum or minimum <span class="math inline">\(f_0\)</span> , the level surface <span class="math inline">\(f(x,y)=f_0\)</span> is tangent to the level surface <span class="math inline">\(g(x,y)=3\)</span> .
+<img src="/old/uploads/2019/08/4076517399.png" alt="multiplier-2.png">
+It means that the gradient at <span class="math inline">\(f(x,y)\)</span> is parallel to <span class="math inline">\(g(x,y)\)</span> , namely, <span class="math inline">\(\nabla f=\lambda\nabla g\)</span> , where <span class="math inline">\(\lambda\)</span> is an unknown. So, we have such system of equations</p>
+<p><span class="math display">\[\left\{\begin{aligned}2x=\lambda y\\2y=\lambda x\\xy=3\end{aligned}\right.,
+\]</span></p>
+<p>and we get the point is <span class="math inline">\((\sqrt3,\sqrt3)\)</span> or <span class="math inline">\((-\sqrt3,-\sqrt3)\)</span> .</p>
+<h3 id="lagrange-multiplier-1">Lagrange Multiplier</h3>
+<p>Now we conclude the method, given a function <span class="math inline">\(f(x,y)\)</span> and a constraint <span class="math inline">\(g(x,y)=c\)</span> , then to maximize or minimize the function, we need to solve the system of equations <span class="math inline">\(\left\{\begin{aligned}\frac{\partial f}{\partial x}&=\lambda\frac{\partial g}{\partial x}\\\frac{\partial f}{\partial y}&=\lambda\frac{\partial g}{\partial y}\\g(x,y)&=c\end{aligned}\right..\)</span></p>
+<h3 id="geometry">Geometry</h3>
+<p>Why it is correct? If there is no constraint <span class="math inline">\(g(x,y)=c\)</span> , we just solve <span class="math inline">\(f_x=f_y=0\)</span> , and it means when we move on a horizontal surface near the point, the function doesn&rsquo;t change.
+Now we have a constraint, similarly, we just find a point where we move along the constraint surface that the function doesn&rsquo;t change too. So <span class="math inline">\(\nabla_{\hat{\mathbf{u}}}f=0\)</span> , where <span class="math inline">\(\hat{\mathbf{u}}\)</span> is any direction on the constraint surface, in other words, <span class="math inline">\(\nabla f\cdot\hat{\mathbf{u}}=0\)</span> . Since the gradient <span class="math inline">\(\nabla g\)</span> is also normal to the constraint surface, we have <span class="math inline">\(\nabla f\parallel\nabla g\)</span> .</p>
+<h3 id="application">Application</h3>
+<p><strong>e.g.</strong> Find a best solution to minimizing the surface area of a pyramid with a given triangular base <span class="math inline">\(a_1,a_2,a_3\)</span> and a given height <span class="math inline">\(h\)</span> .</p>
+<p><strong>Solution</strong> We can plot the pyramid in <span class="math inline">\(xy\)</span> plane.
+<img src="/old/uploads/2019/08/2955674879.png" alt="pyramid-base.png">
+And it looks like the following in 3D space.
+<img src="/old/uploads/2019/08/283621792.png" alt="pyramid.png">
+To determine the position of the vertex <span class="math inline">\(D\)</span> more easily, we project the vertex on the <span class="math inline">\(xy\)</span> plane.
+<img src="/old/uploads/2019/08/2227986237.png" alt="pyramid-vertex.png">
+And take the distance from the projection to three sides <span class="math inline">\(a_1,a_2,a_3\)</span> as <span class="math inline">\(d_1,d_2,d_3\)</span> , and we can express the surface area <span class="math inline">\(S\)</span> and the base area <span class="math inline">\(A\)</span> :</p>
+<p><span class="math display">\[\begin{aligned}S=\frac12a_1\sqrt{d_1^2+h^2}+\frac12a_2\sqrt{d_2^2+h^2}+\frac12a_3\sqrt{d_3^2+h^2}\\A=\frac12a_1d_1+\frac12a_2d_2+\frac12a_3d_3\end{aligned}.
+\]</span></p>
+<p>And apply the Lagrange Multiplier</p>
+<p><span class="math display">\[\left\{\begin{aligned}\frac{\partial S}{\partial d_1}=\lambda\frac{\partial A}{\partial d_1}\\\frac{\partial S}{\partial d_2}=\lambda\frac{\partial A}{\partial d_2}\\\frac{\partial S}{\partial d_3}=\lambda\frac{\partial A}{\partial d_3}\end{aligned}\right.,
+\]</span></p>
+<p>and found that <span class="math inline">\(d_1=d_2=d_3\)</span> , so the vertex is just above the incenter of the triangular base.</p>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">yscale</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2019-08-07
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/mit-18.02/">MIT 18.02</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/mit-ocw-18-02-multivariable-calculus-14-15/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">[MIT OCW] 18.02 Multivariable Calculus - 14, 15 笔记</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/mit-ocw-18-02-multivariable-calculus-12/">
+            <span class="next-text nav-default">[MIT OCW] 18.02 Multivariable Calculus - 12 笔记</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:yscysc01@hotmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/siger-young" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.zhihu.com/people/yscale" class="iconfont icon-zhihu" title="zhihu"></a>
+  <a href="https://ml.yscale.cf/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">yscale</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+
+
+  <script type="text/javascript">
+    window.MathJax = {
+		  tex: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']],
+          processEscapes: true,
+          processEnvironments: true,
+        autoload: {
+            color: [],
+            colorV2: ['color']
+          },
+          packages: {'[+]': ['noerrors']}
+      },
+      loader: {
+		  	load: ['input/asciimath', '[tex]/noerrors']
+      }
+    };
+  </script>
+  <script async src="https://cdn.bootcdn.net/ajax/libs/mathjax/3.0.5/es5/tex-mml-chtml.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
