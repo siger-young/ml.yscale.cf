@@ -6,10 +6,19 @@
     <description>Recent content in Posts on yscale - anything about ML</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 03 Sep 2019 00:13:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2020 22:37:13 +0800</lastBuildDate>
     
 	<atom:link href="https://ml.yscale.cf/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>博客从 Typecho 搬迁至 Hugo</title>
+      <link>https://ml.yscale.cf/post/moved-to-hugo/</link>
+      <pubDate>Sat, 30 May 2020 22:37:13 +0800</pubDate>
+      
+      <guid>https://ml.yscale.cf/post/moved-to-hugo/</guid>
+      <description>&lt;p&gt;使用了早有耳闻的 Hugo，但是遇到了不少坑，下面总结一下&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>[MIT OCW] 18.02 Multivariable Calculus - 19 笔记</title>
