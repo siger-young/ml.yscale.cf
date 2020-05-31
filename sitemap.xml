@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ml.yscale.cf/categories/</loc>
+    <lastmod>2020-05-30T22:37:13+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://ml.yscale.cf/categories/default/</loc>
+    <lastmod>2020-05-30T22:37:13+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://ml.yscale.cf/post/</loc>
     <lastmod>2020-05-30T22:37:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -24,13 +38,6 @@
   
   <url>
     <loc>https://ml.yscale.cf/post/mit-ocw-18-02-multivariable-calculus-19/</loc>
-    <lastmod>2019-09-03T00:13:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ml.yscale.cf/categories/</loc>
     <lastmod>2019-09-03T00:13:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -256,13 +263,6 @@
   <url>
     <loc>https://ml.yscale.cf/post/new-integral-substitution/</loc>
     <lastmod>2018-07-19T20:24:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://ml.yscale.cf/categories/default/</loc>
-    <lastmod>2018-07-12T22:04:12+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
