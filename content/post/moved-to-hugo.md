@@ -2,6 +2,8 @@
 title: "博客从 Typecho 搬迁至 Hugo"
 date: 2020-05-30T22:37:13+08:00
 draft: false
+categories:
+- default
 ---
 使用了早有耳闻的 Hugo，但是遇到了不少坑，下面总结一下
 <!--more-->
