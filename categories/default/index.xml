@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>default on yscale - anything about ML</title>
-    <link>https://ml.yscale.cf/categories/default/</link>
+    <link>https://ml.yscale.tk/categories/default/</link>
     <description>Recent content in default on yscale - anything about ML</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sat, 30 May 2020 22:37:13 +0800</lastBuildDate>
     
-	<atom:link href="https://ml.yscale.cf/categories/default/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ml.yscale.tk/categories/default/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>博客从 Typecho 搬迁至 Hugo</title>
-      <link>https://ml.yscale.cf/post/moved-to-hugo/</link>
+      <link>https://ml.yscale.tk/post/moved-to-hugo/</link>
       <pubDate>Sat, 30 May 2020 22:37:13 +0800</pubDate>
       
-      <guid>https://ml.yscale.cf/post/moved-to-hugo/</guid>
+      <guid>https://ml.yscale.tk/post/moved-to-hugo/</guid>
       <description>&lt;p&gt;使用了早有耳闻的 Hugo，但是遇到了不少坑，下面总结一下&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Hello, LaTeX!</title>
-      <link>https://ml.yscale.cf/post/hello-latex/</link>
+      <link>https://ml.yscale.tk/post/hello-latex/</link>
       <pubDate>Thu, 12 Jul 2018 22:04:12 +0000</pubDate>
       
-      <guid>https://ml.yscale.cf/post/hello-latex/</guid>
+      <guid>https://ml.yscale.tk/post/hello-latex/</guid>
       <description>\[\rm Hello, \LaTeX{}! \]</description>
     </item>
     

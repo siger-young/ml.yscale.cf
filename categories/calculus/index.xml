@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>calculus on yscale - anything about ML</title>
-    <link>https://ml.yscale.cf/categories/calculus/</link>
+    <link>https://ml.yscale.tk/categories/calculus/</link>
     <description>Recent content in calculus on yscale - anything about ML</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 19 Jul 2018 20:24:00 +0000</lastBuildDate>
     
-	<atom:link href="https://ml.yscale.cf/categories/calculus/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ml.yscale.tk/categories/calculus/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>新接触到的积分的代换</title>
-      <link>https://ml.yscale.cf/post/new-integral-substitution/</link>
+      <link>https://ml.yscale.tk/post/new-integral-substitution/</link>
       <pubDate>Thu, 19 Jul 2018 20:24:00 +0000</pubDate>
       
-      <guid>https://ml.yscale.cf/post/new-integral-substitution/</guid>
+      <guid>https://ml.yscale.tk/post/new-integral-substitution/</guid>
       <description>&lt;p&gt;许久没接触与继续学习积分的技巧了，把最近接触到的个别积分代换技巧来小结一下。&lt;/p&gt;</description>
     </item>
     

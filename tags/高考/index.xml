@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>高考 on yscale - anything about ML</title>
-    <link>https://ml.yscale.cf/tags/%E9%AB%98%E8%80%83/</link>
+    <link>https://ml.yscale.tk/tags/%E9%AB%98%E8%80%83/</link>
     <description>Recent content in 高考 on yscale - anything about ML</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Sun, 18 Aug 2019 21:18:00 +0000</lastBuildDate>
     
-	<atom:link href="https://ml.yscale.cf/tags/%E9%AB%98%E8%80%83/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ml.yscale.tk/tags/%E9%AB%98%E8%80%83/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>2013 年上海高考数学卷一道题的多种解法</title>
-      <link>https://ml.yscale.cf/post/2013-gaokao-multiple-solutions/</link>
+      <link>https://ml.yscale.tk/post/2013-gaokao-multiple-solutions/</link>
       <pubDate>Sun, 18 Aug 2019 21:18:00 +0000</pubDate>
       
-      <guid>https://ml.yscale.cf/post/2013-gaokao-multiple-solutions/</guid>
+      <guid>https://ml.yscale.tk/post/2013-gaokao-multiple-solutions/</guid>
       <description>题源 2013 年上海高考数学卷 第 13 题 题面 在 \(xOy\) 平面上，将两个半圆弧 \((x-1)^2+y^2=1~(x\geq 1)\) 和 \((x-3)^2+y^2=1~(x\geq 3)\) 、两条直线 \(y=1\) 和 \(y=-1\) 围成的封闭图形记为 \(D\) ，如图中阴影部分. 记 \(D\) 绕 \(y\) 轴旋转一周而</description>
     </item>
     

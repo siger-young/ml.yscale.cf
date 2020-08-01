@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://ml.yscale.cf/sitemap.xml
+Sitemap: https://ml.yscale.tk/sitemap.xml
