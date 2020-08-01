@@ -15,7 +15,7 @@ categories:
     - 使用 shortcode 来对 LaTeX 部分转义，如 Minimo 主题中就添加了 `<katex></katex>` 的 shortcode
     - （被采用的）Goldmark 官方已经有 `goldmark-mathjax` 的扩展，其能够正确处理 LaTeX 部分，因此只需要向 Hugo 源代码中添加该扩展，并手动编译即可
 
-    可以参照 [修复 Hugo 对 LaTeX 与 Markdown 转义字符冲突的问题](https://cs.yscale.cf/2020/05/29/hugo-fix-markup-math/).
+    可以参照 [修复 Hugo 对 LaTeX 与 Markdown 转义字符冲突的问题](https://cs.yscale.tk/2020/05/29/hugo-fix-markup-math/).
 
 * TOC 目录层级
 
@@ -54,4 +54,4 @@ categories:
 
     原因在于 Hugo 还有一个扩展版，扩展版能够编译 SASS / SCSS，可以在官方仓库的 [releases](https://github.com/gohugoio/hugo/releases) 处看到. AUR 里面反正没找到……
 
-    然后问题回来了，如果还要解决公式问题的话，手动编译需要加上一个 tag，使得编译出来的为 Extended 版，可以参照 [修复 Hugo 对 LaTeX 与 Markdown 转义字符冲突的问题](https://cs.yscale.cf/2020/05/29/hugo-fix-markup-math/) 文章尾部的更新.
+    然后问题回来了，如果还要解决公式问题的话，手动编译需要加上一个 tag，使得编译出来的为 Extended 版，可以参照 [修复 Hugo 对 LaTeX 与 Markdown 转义字符冲突的问题](https://cs.yscale.tk/2020/05/29/hugo-fix-markup-math/) 文章尾部的更新.

@@ -1,4 +1,4 @@
-baseURL = "https://ml.yscale.cf/"
+baseURL = "https://ml.yscale.tk/"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"                             # en / zh-cn / ... (This field determines which i18n file to use)
 title = "yscale - anything about ML"
@@ -93,7 +93,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   # mathjax
   mathjax = true           # see https://www.mathjax.org/                              # 是否使用mathjax（数学公式）
   mathjaxEnableSingleDollar = true                                                     # 是否使用 $...$ 即可進行inline latex渲染
-  mathjaxEnableAutoNumber = false                                                       # 是否使用公式自动编号
+  mathjaxEnableAutoNumber = true                                                       # 是否使用公式自动编号
   mathjaxUseLocalFiles = false  # You should install mathjax in `your-site/static/lib/mathjax`
 
   postMetaInFooter = true   # contain author, lastMod, markdown link, license           # 包含作者，上次修改时间，markdown链接，许可信息
@@ -148,7 +148,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
 
   [params.gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
     owner = "siger-young"              # Your GitHub ID
-    repo = "ml.yscale.cf"               # The repo to store comments
+    repo = "ml.yscale.tk"               # The repo to store comments
     clientId = "d2240ef01371afb7c59c"           # Your client ID
     clientSecret = "010c8067c536591ce1b4da011a009ca4a43ad588"       # Your client secret
 
